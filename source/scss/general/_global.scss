@@ -4,8 +4,6 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  font-family: var(--font-family-gilroy);
-  overflow-x: hidden;
 }
 
 html {
@@ -162,7 +160,7 @@ input[type="number"] {
   max-width: 1272px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 }
 
 
