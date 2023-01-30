@@ -1,0 +1,24 @@
+.lang {
+  &__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    &:checked ~ .lang__name {
+      color: var(--color-dark-gray);
+    }
+  }
+}

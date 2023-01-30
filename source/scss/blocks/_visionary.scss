@@ -1,0 +1,29 @@
+.visionary {
+  margin-bottom: 200px;
+
+  &__inner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    grid-gap: 120px;
+  }
+
+  &__info {
+    max-width: 504px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__info-descr {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+  }
+
+  &__text {
+    color: var(--color-dark-gray);
+  }
+}

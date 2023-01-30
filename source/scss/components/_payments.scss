@@ -1,0 +1,10 @@
+.payments {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+}

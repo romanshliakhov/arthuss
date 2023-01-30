@@ -1,8 +1,89 @@
 <header class="header">
-
   <div class="mobile">
+    <div class="mobile__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <div class="mobile__menu">
 
+    </div>
+  </div>
+
+  <div class="side-panel">
+    <a class="side-panel__link" href="#">Знижки на обрані бестселер</a>
+
+    <div class="side-panel__close">
+      <svg width='16' height='16'>
+        <use href='img/sprite/sprite.svg#close'></use>
+      </svg>
+    </div>
+  </div>
+
+  <div class="header__inner">
+    <a class="logo" href="/">
+      <picture>
+        <source type='image/webp' srcset='img/logo.webp'>
+        <img width='101' height='24' src='img/logo.png' alt='logo'>
+      </picture>
+    </a>
+
+    <div class="lang">
+      <ul class="lang__list">
+        <li class="lang__list-item">
+          <label class="lang__label">
+            <input class="lang__radio" type="radio" name="language">
+            <span class="lang__name">eng</span>
+          </label>
+        </li>
+        <li class="lang__list-item">
+          <label class="lang__label">
+            <input class="lang__radio" type="radio" name="language">
+            <span class="lang__name">укр</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a class="nav__link" href="/shop.html">Магазин</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Акції</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Доставка</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Контакти</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="/blog.html">Блог</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" href="#">Брендування книг</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__search search">
+
+    </div>
+
+    <div class="icons">
+      <button class="user">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#user'></use>
+        </svg>
+      </button>
+      <button class="basket">
+        <svg width='24' height='24'>
+          <use href='img/sprite/sprite.svg#basket'></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>

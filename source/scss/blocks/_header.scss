@@ -1,5 +1,11 @@
 .header {
-
+  &__inner {
+    padding: 38px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 37px;
+  }
 }
 
 

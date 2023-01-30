@@ -1,0 +1,49 @@
+.card {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
+
+  &__status {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    border-radius: 40px;
+
+    &--none {
+      padding: 10px 20px;
+      background-color: #82837F;
+    }
+
+    &--promo {
+      background-color: #E31D24;
+    }
+
+    &--preorder {
+      background-color: #1D78E3;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+
+  &__info-head {
+    min-height: 68px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+  }
+}

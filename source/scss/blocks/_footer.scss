@@ -1,3 +1,92 @@
 .footer {
+  padding: 50px 0 100px;
 
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+
+  &__mid {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  &__mid-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+
+    &--about {
+      max-width: 248px;
+    }
+
+    &--adress {
+      max-width: 153px;
+    }
+
+    &--navigation {
+      max-width: 110px;
+    }
+
+    &--help {
+      max-width: 158px;
+    }
+
+    &--subscribe {
+      max-width: 400px;
+      align-items: flex-end;
+      text-align: right;
+
+      p {
+        max-width: 306px;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 14px;
+  }
+
+  &__bot {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  &__bot-left {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+  }
+
+  &__left-block {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__bot-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    grid-gap: 15px;
+  }
+
+
+  &__right-head {
+    display: flex;
+    align-items: center;
+    grid-gap: 22px;
+  }
+
+  &__right-mid {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+  }
 }

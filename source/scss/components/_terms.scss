@@ -1,0 +1,14 @@
+.terms {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 14px;
+    background-color: var(--color-dark-gray);
+  }
+}
