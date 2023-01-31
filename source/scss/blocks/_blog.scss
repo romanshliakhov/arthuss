@@ -1,0 +1,15 @@
+.blog {
+  margin-bottom: 100px;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 46px;
+  }
+
+  &__news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 46px 16px;
+  }
+}

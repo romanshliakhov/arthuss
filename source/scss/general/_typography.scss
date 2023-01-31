@@ -120,6 +120,14 @@
   color: var(--color-dark-gray);
 }
 
+.news__descr {
+  font-family: var(--font-family-mariupol);
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
 .visionary__info-title {
   font-family: var(--font-family-mariupol);
   font-size: 58px;
@@ -172,3 +180,28 @@
   font-weight: 700;
   letter-spacing: -0.02em;
 }
+
+.pagination__list-link {
+  font-family: var(--font-family-mariupol);
+  font-size: 24px;
+  line-height: 125%;
+  font-weight: 700;
+  color: var(--color-dark-charcoal);
+}
+
+.breadcrumbs__current {
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: var(--color-dark-gray);
+}
+
+.breadcrumbs__prev {
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 700;
+  text-decoration-line: underline;
+  color: var(--color-heavy-rain);
+}
+

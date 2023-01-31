@@ -1,0 +1,44 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 50px;
+
+  &__list {
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 30px;
+  }
+
+  &__list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+      color: #82837F;
+    }
+
+    &--active {
+      color: #82837F;
+    }
+  }
+
+  // Визуальное отображение кнопок пагинации
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    background-color: #E9E9E9;
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}

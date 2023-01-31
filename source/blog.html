@@ -7,7 +7,288 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__wrapp">
+            <a class="breadcrumbs__prev" href="/">Головна</a>
+            <span class="breadcrumbs__current">Блог</span>
+          </div>
+        </div>
+      </section>
 
+      <section class="blog">
+        <div class="container">
+          <div class="blog__wrapp">
+            <div class="blog__title subtitle">Блог</div>
+
+            <ul class="blog__tags tags">
+              <li class="tags__item">Теги:</li>
+              <li class="tags__item">дизайн</li>
+              <li class="tags__item">дизайн інтерєру</li>
+              <li class="tags__item">про книжки arthuss</li>
+              <li class="tags__item">стиль життя</li>
+              <li class="tags__item">креативний менеджмент</li>
+              <li class="tags__item">бізнес</li>
+              <li class="tags__item">маркетинг</li>
+              <li class="tags__item">ілюстрація</li>
+              <li class="tags__item">мистецтво</li>
+              <li class="tags__item">комікси</li>
+              <li class="tags__item">архітектура</li>
+              <li class="tags__item">motion-дизайн</li>
+              <li class="tags__item">мода і краса</li>
+              <li class="tags__item">літературознавство</li>
+              <li class="tags__item">психологія</li>
+              <li class="tags__item">графічний дизайн</li>
+              <li class="tags__item">анімація</li>
+              <li class="tags__item">фотографія</li>
+            </ul>
+
+            <div class="tags">Теги: </div>
+
+            <ul class="blog__news">
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">06.07.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news1.webp'>
+                      <img width='400' height='2700' src='img/news/news1.png' alt='Життя як пантон'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Чому варто прочитати книгу Діани Клочко «65 українських шедеврів. Визнані й неявні»</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">29.06.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news2.webp'>
+                      <img width='400' height='2700' src='img/news/news2.png' alt='Життя як пантон'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Розкрадене мистецтво: 6 українських художників, котрих росія видає за своїх</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">24.06.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news3.webp'>
+                      <img width='400' height='2700' src='img/news/news3.png' alt='Книги для веб-дизайнерів і розробників сайтів'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Книги для веб-дизайнерів і розробників сайтів</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">06.07.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news4.webp'>
+                      <img width='400' height='2700' src='img/news/news4.png' alt='Чому варто прочитати книгу Діани Клочко «65 українських шедеврів. Визнані й неявні»'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Чому варто прочитати книгу Діани Клочко «65 українських шедеврів. Визнані й неявні»</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">29.06.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news5.webp'>
+                      <img width='400' height='2700' src='img/news/news5.png' alt='Розкрадене мистецтво: 6 українських художників, котрих росія видає за своїх'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Розкрадене мистецтво: 6 українських художників, котрих росія видає за своїх</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">24.06.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news6.webp'>
+                      <img width='400' height='2700' src='img/news/news6.png' alt='Книги для веб-дизайнерів і розробників сайтів'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Книги для веб-дизайнерів і розробників сайтів</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">06.07.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news7.webp'>
+                      <img width='400' height='2700' src='img/news/news7.png' alt='Чому варто прочитати книгу Діани Клочко «65 українських шедеврів. Визнані й неявні»'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Чому варто прочитати книгу Діани Клочко «65 українських шедеврів. Визнані й неявні»</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">29.06.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news8.webp'>
+                      <img width='400' height='2700' src='img/news/news8.png' alt='Розкрадене мистецтво: 6 українських художників, котрих росія видає за своїх'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Розкрадене мистецтво: 6 українських художників, котрих росія видає за своїх</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+              <li class="blog__news-item">
+                <div class="news">
+                  <div class="news__pubtime">24.06.2022</div>
+
+                  <div class="news__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/news/news9.webp'>
+                      <img width='400' height='2700' src='img/news/news9.png' alt='Книги для веб-дизайнерів і розробників сайтів'>
+                    </picture>
+                  </div>
+
+                  <div class="news__info">
+                    <div class="news__title">Книги для веб-дизайнерів і розробників сайтів</div>
+                    <p class="news__descr">Про книгу Клеї Ширер та Джоанни Теплін «Перетвори свій дім. Посібник з організування та усвідомлення цілей своєї оселі»</p>
+                    <a class="btn btn--publication" href="/publication.html">Читати далі</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="pagination">
+              <a class="pagination__nav pagination__nav--prev" href="#">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                </svg>
+              </a>
+              <ul class="pagination__list">
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">1</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link pagination__list-link--active" href="#">2</a>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">3</a>
+                </li>
+                <li class="pagination__list-item">
+                  <span>...</span>
+                </li>
+                <li class="pagination__list-item">
+                  <a class="pagination__list-link" href="#">8</a>
+                </li>
+              </ul>
+              <a class="pagination__nav pagination__nav--next" href="#">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="socials">
+        <div class="socials__head">
+          <div class="container">
+            <div class="socials__title subtitle">Слідкуйте за нами:</div>
+          </div>
+        </div>
+
+        <div class="socials__slider swiper-container">
+          <div class="socials__slider-wrapper swiper-wrapper">
+            <div class="socials__slider-slide swiper-slide">
+              <a class="socials__link" href="#">
+                <div class="socials__link-name">Instagram</div>
+
+                <svg width='104' height='57'>
+                  <use href='img/sprite/sprite.svg#socials-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class="socials__slider-slide swiper-slide">
+              <a class="socials__link" href="#">
+                <div class="socials__link-name">Facebook</div>
+
+                <svg width='104' height='57'>
+                  <use href='img/sprite/sprite.svg#socials-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class="socials__slider-slide swiper-slide">
+              <a class="socials__link" href="#">
+                <div class="socials__link-name">Telegram</div>
+
+                <svg width='104' height='57'>
+                  <use href='img/sprite/sprite.svg#socials-arrow'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})

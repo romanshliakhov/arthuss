@@ -1,0 +1,20 @@
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 8px 20px;
+
+  &__item {
+    font-family: var(--font-family-mariupol);
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--color-dark-charcoal);
+    text-decoration-line: underline;
+
+    &:first-child {
+      color: var(--color-heavy-rain);
+      text-decoration-line: none;
+    }
+  }
+}
