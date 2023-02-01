@@ -2,7 +2,6 @@
   position: relative;
   max-width: 400px;
   width: 100%;
-
   display: flex;
   flex-direction: column;
   grid-gap: 24px;
@@ -34,6 +33,10 @@
     grid-gap: 16px;
   }
 
+  &__image {
+    display: flex;
+  }
+
   &__info-head {
     min-height: 68px;
     display: flex;
@@ -45,5 +48,9 @@
     display: flex;
     align-items: center;
     grid-gap: 15px;
+  }
+
+  &__btn {
+    margin-top: 15px;
   }
 }

@@ -112,7 +112,8 @@
   color: var(--color-heavy-rain);
 }
 
-.news__title {
+.news__title,
+.publication__block-head {
   font-family: var(--font-family-mariupol);
   font-size: 24px;
   line-height: 125%;
@@ -205,3 +206,17 @@
   color: var(--color-heavy-rain);
 }
 
+.publication__text {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-dark-gray);
+}
+
+.publication__author {
+  font-family: var(--font-family-mariupol);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-heavy-rain);
+}

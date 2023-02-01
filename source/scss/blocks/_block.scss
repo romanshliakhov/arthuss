@@ -22,5 +22,9 @@
   &__slider-slide {
     max-width: 400px;
     width: 100%;
+
+    &--small {
+      max-width: 296px;
+    }
   }
 }
