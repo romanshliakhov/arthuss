@@ -1,0 +1,114 @@
+.shop {
+  margin-bottom: 120px;
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 296px auto;
+    grid-gap: 120px;
+  }
+
+  &__categories {
+    background-color: var(--color-gray);
+  }
+
+  &__info-head {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    grid-gap: 44px;
+  }
+
+  &__sorting {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__products {
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px 16px;
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+  }
+
+  &__pagination-list {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+  }
+
+  &__pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    transition: all 0.4s ease;
+
+    &:hover,
+    &:active {
+      color: #82837F;
+    }
+
+    &--active {
+      background-color:#E9E9E9;
+      color: #82837F;
+    }
+  }
+
+  &__pagination-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sort {
+    position: relative;
+  }
+
+  &__sort-header {
+    width: 210px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 26px;
+    padding: 10px 16px;
+    background-color: var(--color-gray);
+    border-radius: 30px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__sort-body {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: 10px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 20px;
+    border-radius: 10px;
+    background-color: var(--color-white);
+    z-index: -1;
+    opacity: 0;
+    visibility: visible;
+    transition: all 0.1s ease-in-out;
+  }
+
+  &__sort-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}

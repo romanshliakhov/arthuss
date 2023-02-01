@@ -1,0 +1,23 @@
+.banner {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: 52px;
+    left: 52px;
+    color: var(--color-light-grey);
+    z-index: 1;
+  }
+
+  &__image {
+    position: relative;
+    max-height: 522px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(34, 34, 34, 0.2), rgba(34, 34, 34, 0.2));
+    }
+  }
+}

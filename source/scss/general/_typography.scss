@@ -220,3 +220,27 @@
   font-weight: 400;
   color: var(--color-heavy-rain);
 }
+
+.shop__products-count {
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 600;
+  color: var(--color-heavy-rain);
+}
+
+.shop__pagination-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--color-dark-gray);
+}
+
+.shop__sort-name,
+.shop__sort-current,
+.shop__sort-item {
+  font-size: 14px;
+  line-height: 143%;
+  font-weight: 700;
+  color: var(--color-dark-gray);
+}
+

@@ -1,0 +1,14 @@
+.banners {
+  margin-bottom: 120px;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__slider {
+    width: 100%;
+  }
+}

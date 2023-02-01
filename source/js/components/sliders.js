@@ -13,6 +13,20 @@ let sliderHero = new Swiper(".hero__slider", {
   },
 });
 
+// Banner slider
+let sliderBanners = new Swiper(".banners__slider", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  // centerSlides:true,
+  loop: true,
+  observer: true,
+  navigation: {
+      nextEl: ".banners__slider-next",
+      prevEl: ".banners__slider-prev",
+      clickable: true,
+  },
+});
+
 // Default slider
 for (const container of  document.querySelectorAll('.container') ) {
   let mainSlider = new Swiper(container.querySelector('.block__slider'), {

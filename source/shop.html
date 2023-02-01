@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ua">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__wrapp">
+            <a class="breadcrumbs__prev" href="/">Головна</a>
+            <span class="breadcrumbs__current">Магазин</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="banners">
+        <div class="container">
+          <div class="banners__wrapp">
+            <div class="banners__slider swiper-container">
+              <div class="banners__slider-wrapper swiper-wrapper">
+                <div class="banners__slider-slide swiper-slide">
+                  <div class="banner">
+                    <div class="banner__title subtitle">Рекламний банер</div>
+
+                    <div class="banner__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/banners/banner.webp'>
+                        <img width='1232' height='522' src='img/banners/banner.png' alt='Рекламний банер'>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="banners__slider-slide swiper-slide">
+                  <div class="banner">
+                    <div class="banner__title subtitle">Рекламний банер 2</div>
+
+                    <div class="banner__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/banners/banner.webp'>
+                        <img width='1232' height='522' src='img/banners/banner.png' alt='Рекламний банер'>
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="banners__controls controls">
+              <button class="banners__slider-prev controls__btn">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                </svg>
+              </button>
+              <button class="banners__slider-next controls__btn">
+                <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#arrow-next'></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="container">
+          <div class="shop__wrapp">
+            <div class="shop__aside">
+              <div class="shop__categories">
+                <p>Тематика</p>
+              </div>
+            </div>
+
+            <div class="shop__info">
+              <div class="shop__info-head">
+                <div class="shop__info-title title">Всі книги</div>
+
+                <div class="shop__products-count"><span>153 позиції</span>позиції</div>
+              </div>
+
+              <div class="shop__sorting">
+                <div class="shop__sort-name">Сортувати:</div>
+
+                <div class="shop__sort select">
+                  <div class="shop__sort-header select__header">
+                    <span class="shop__sort-current select__current">
+                      За замовчуванням
+                    </span>
+                    <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#arrow-down'></use>
+                    </svg>
+                  </div>
+
+                  <ul class="shop__sort-body select__body">
+                    <li class="shop__sort-item select__item" data-choice='choosen'>За замовчуванням</li>
+                    <li class="shop__sort-item select__item" data-choice='choosen'>За ціною</li>
+                    <li class="shop__sort-item select__item" data-choice='choosen'>За новизною</li>
+                  </ul>
+                </div>
+              </div>
+
+              <ul class="shop__products">
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__status card__status--promo">Останній день акції</div>
+
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card5.webp'>
+                        <img width='400' height='500' src='img/card/card5.png' alt='Як стати успішним ілюстратором'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Дерек Бразелл, Джо Девіс</div>
+                        <div class="card__title">Як стати успішним ілюстратором</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">470 грн</div>
+                        <div class="card__price-regular">580 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__status card__status--preorder">Передзамовлення</div>
+
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card3.webp'>
+                        <img width='400' height='500' src='img/card/card3.png' alt='Графічні стилі: від вікторіанців до хіпстерів'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Стівен Геллер, Сеймур Кваст</div>
+                        <div class="card__title">Графічні стилі: від вікторіанців до хіпстерів</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">570 грн</div>
+                        <div class="card__price-regular">670 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__status card__status--promo">До кінця акції 65:30</div>
+
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card1.webp'>
+                        <img width='400' height='500' src='img/card/card1.png' alt='Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Клеа Ширер, Джоанна Теплін</div>
+                        <div class="card__title">Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">440 грн</div>
+                        <div class="card__price-regular">550 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__status card__status--none">Немає у наявності</div>
+
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card2.webp'>
+                        <img width='400' height='500' src='img/card/card2.png' alt='Заґмайстер і Волш. Краса (БЕЗ СРІБЛЕННЯ ОБРІЗУ БЛОКУ)'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Стефан Заґмайстер, Джессіка Волш</div>
+                        <div class="card__title">Заґмайстер і Волш. Краса (БЕЗ СРІБЛЕННЯ ОБРІЗУ БЛОКУ)</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">610 грн</div>
+                        <div class="card__price-regular">720 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__status card__status--best">Хіт продажів</div>
+
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card6.webp'>
+                        <img width='400' height='500' src='img/card/card6.png' alt='Жіноча компанія. Поради й натхнення від 100 мисткинь і підприємниць'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Ґрейс Бонні</div>
+                        <div class="card__title">Жіноча компанія. Поради й натхнення від 100 мисткинь і підприємниць</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">420 грн</div>
+                        <div class="card__price-regular">490 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__status card__status--preorder">Передзамовлення</div>
+
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card7.webp'>
+                        <img width='400' height='500' src='img/card/card7.png' alt='1000 ідей поєднування кольорів: Барвистий путівник по взаємодії відтінків'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Дженніфер Отт</div>
+                        <div class="card__title">1000 ідей поєднування кольорів: Барвистий путівник по взаємодії відтінків</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">485 грн</div>
+                        <div class="card__price-regular">570 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card8.webp'>
+                        <img width='400' height='500' src='img/card/card8.png' alt='Дикі інтер’єри. Красиві рослини в чудових просторах'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Гілтон Картер</div>
+                        <div class="card__title">Дикі інтер’єри. Красиві рослини в чудових просторах</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">480 грн</div>
+                        <div class="card__price-regular">680 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="shop__products-item">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card9.webp'>
+                        <img width='400' height='500' src='img/card/card9.png' alt='Життя в кольорі'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Ребекка Етвуд</div>
+                        <div class="card__title">Життя в кольорі</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">630 грн</div>
+                        <div class="card__price-regular">740 грн</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="shop__pagination">
+                <ul class="shop__pagination-list">
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link shop__pagination-link--active" href="#">1</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link" href="#">2</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link" href="#">3</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link" href="#">4</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link" href="#">5</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link" href="#">6</a>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <span class="shop__pagination-link">...</span>
+                  </li>
+                  <li class="shop__pagination-item">
+                    <a class="shop__pagination-link" href="#">13</a>
+                  </li>
+                </ul>
+                <a class="shop__pagination-nav shop__pagination-nav--next" href="#">
+                  <svg width='20' height='20'>
+                    <use href='img/sprite/sprite.svg#arrow-next'></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapp">
+            <div class="block__head">
+              <h2 class="subtitle">Ви вже переглядали:</h2>
+
+              <div class="block__slider-controls controls">
+                <button class="block__slider-prev controls__btn">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                  </svg>
+                </button>
+                <button class="block__slider-next controls__btn">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-next'></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="block__slider swiper-container">
+              <div class="block__slider-wrapper swiper-wrapper">
+                <div class="block__slider-slide block__slider-slide--small swiper-slide">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card10.webp'>
+                        <img width='400' height='500' src='img/card/card10.png' alt='Жінки у дизайні'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Ліббі Селлерс</div>
+                        <div class="card__title">Жінки у дизайні</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">410 грн</div>
+                        <div class="card__price-regular">480 грн</div>
+                      </div>
+                    </div>
+
+                    <button class="card__btn btn btn--books">Додати в кошик</button>
+                  </div>
+                </div>
+                <div class="block__slider-slide block__slider-slide--small swiper-slide">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card11.webp'>
+                        <img width='400' height='500' src='img/card/card11.png' alt='Анатомія для художників: Наочний посібник із зображення людського тіла'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Джахірул Амін</div>
+                        <div class="card__title">Анатомія для художників: Наочний посібник із зображення людського тіла</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">830 грн</div>
+                        <div class="card__price-regular">1 170 грн</div>
+                      </div>
+                    </div>
+
+                    <button class="card__btn btn btn--books">Додати в кошик</button>
+                  </div>
+                </div>
+                <div class="block__slider-slide block__slider-slide--small swiper-slide">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card12.webp'>
+                        <img width='400' height='500' src='img/card/card12.png' alt='Візуальна культура'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Алексіс Л. Бойлен</div>
+                        <div class="card__title">Візуальна культура</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">330 грн</div>
+                        <div class="card__price-regular">390 грн</div>
+                      </div>
+                    </div>
+
+                    <button class="card__btn btn btn--books">Додати в кошик</button>
+                  </div>
+                </div>
+                <div class="block__slider-slide block__slider-slide--small swiper-slide">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card13.webp'>
+                        <img width='400' height='500' src='img/card/card13.png' alt='Графічні стилі: від вікторіанців до хіпстерів'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Рюбен Патер</div>
+                        <div class="card__title">Політика дизайну</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">290 грн</div>
+                        <div class="card__price-regular">420 грн</div>
+                      </div>
+                    </div>
+
+                    <button class="card__btn btn btn--books">Додати в кошик</button>
+                  </div>
+                </div>
+                <div class="block__slider-slide block__slider-slide--small swiper-slide">
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card3.webp'>
+                        <img width='400' height='500' src='img/card/card3.png' alt='Графічні стилі: від вікторіанців до хіпстерів'>
+                      </picture>
+                    </div>
+
+                    <div class="card__info">
+                      <div class="card__info-head">
+                        <div class="card__authors">Дерек Бразелл, Джо Девіс</div>
+                        <div class="card__title">Як стати успішним ілюстратором</div>
+                      </div>
+
+                      <div class="card__price">
+                        <div class="card__price-current">470 грн</div>
+                        <div class="card__price-regular">580 грн</div>
+                      </div>
+                    </div>
+
+                    <button class="card__btn btn btn--books">Додати в кошик</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="socials">
+        <div class="socials__head">
+          <div class="container">
+            <div class="socials__title subtitle">Слідкуйте за нами:</div>
+          </div>
+        </div>
+
+        <div class="socials__slider swiper-container">
+          <div class="socials__slider-wrapper swiper-wrapper">
+            <div class="socials__slider-slide swiper-slide">
+              <a class="socials__link" href="#">
+                <div class="socials__link-name">Instagram</div>
+
+                <svg width='104' height='57'>
+                  <use href='img/sprite/sprite.svg#socials-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class="socials__slider-slide swiper-slide">
+              <a class="socials__link" href="#">
+                <div class="socials__link-name">Facebook</div>
+
+                <svg width='104' height='57'>
+                  <use href='img/sprite/sprite.svg#socials-arrow'></use>
+                </svg>
+              </a>
+            </div>
+            <div class="socials__slider-slide swiper-slide">
+              <a class="socials__link" href="#">
+                <div class="socials__link-name">Telegram</div>
+
+                <svg width='104' height='57'>
+                  <use href='img/sprite/sprite.svg#socials-arrow'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
