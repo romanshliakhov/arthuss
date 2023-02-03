@@ -1,9 +1,10 @@
-let lang = document.querySelectorAll('.select');
+let sorting = document.querySelectorAll('.shop__sort');
+let filter = document.querySelectorAll('.shop__filter');
+const breakpoint = 576;
 
 let selectScript = function (select) {
     select.forEach((item) => {
         const selectCurrent = item.querySelector(".select__current");
-
         item.addEventListener("click", (event) => {
             const el = event.target.dataset.choice;
             const text = event.target.innerHTML;
@@ -20,11 +21,20 @@ let selectScript = function (select) {
     });
 }
 
-selectScript(lang);
+selectScript(sorting);
+
+const mobileSelectInit = () => {
+    let containerWidth = document.documentElement.clientWidth;
+
+    if (containerWidth <= breakpoint) {
+        selectScript(filter);
+    }
+};
 
 window.addEventListener("DOMContentLoaded", () => {
+    mobileSelectInit();
 });
 
 window.addEventListener("resize", () => {
-
+    mobileSelectInit();
 });
