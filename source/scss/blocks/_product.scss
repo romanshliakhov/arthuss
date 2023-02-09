@@ -1,0 +1,183 @@
+.product {
+  margin-bottom: 120px;
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-gap: 120px;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 36px;
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__alert {
+    margin-top: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    background-color: var(--color-gray);
+  }
+
+  &__pricing {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 16px;
+  }
+
+  &__share {
+    margin-top: 24px;
+    margin-bottom: 44px;
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+  }
+
+  &__share-list {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+  }
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__column {
+    span {
+      display: block;
+      font-size: 14px;
+      line-height: 143%;
+      font-weight: 600;
+      color: var(--color-dark-charcoal);
+    }
+
+    &:first-child {
+      border-right: 1px solid #E2DCD1;
+      padding-left: 0;
+      padding-right: 24px;
+    }
+
+    padding-left: 24px;
+  }
+
+  &__blog {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__blog-authors {
+    display: flex;
+    align-items: center;
+
+    li + li {
+      margin-left: -10px;
+    }
+  }
+
+  &__blog-author {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--color-light-grey);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__extra-title {
+    margin-bottom: 16px;
+  }
+
+  &__extra-books {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 50px;
+  }
+
+  &__total-price {
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &__detail {
+    padding: 12px 0;
+    border-bottom: 1px solid #E2DCD1;
+
+    &:first-child {
+      border-top: 1px solid #E2DCD1;
+    }
+  }
+
+  &__detail-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg {
+      transition: all 0.4s ease;
+    }
+
+    &._active {
+      svg {
+        transform: scale(-1);
+      }
+    }
+  }
+
+  &__detail-info {
+    padding-top: 8px;
+  }
+
+  &__detail-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+
+
+
+
+
+
+
+  &__tags {
+    grid-gap: 5px;
+  }
+}

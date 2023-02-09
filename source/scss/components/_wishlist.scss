@@ -1,0 +1,31 @@
+.wishlist {
+  position: relative;
+
+  &__input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .wishlist__icon {
+      color: var(--color-heavy-rain);
+
+      svg {
+        fill: currentColor;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    cursor: pointer;
+
+    svg {
+      fill: var(--color-black);
+      transition: all 0.3s ease;
+    }
+  }
+
+}
