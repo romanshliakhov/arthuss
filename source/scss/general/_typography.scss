@@ -382,3 +382,17 @@
   color: var(--color-dark-gray);
   text-align: right;
 }
+
+.counter__item-text {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-dark-charcoal);
+}
+
+.counter__item-value {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 118%;
+  letter-spacing: -0.02em;
+  color: var(--color-dark-gray);
+}

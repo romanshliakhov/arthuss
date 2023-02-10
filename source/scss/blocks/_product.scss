@@ -170,6 +170,11 @@
     justify-content: space-between;
   }
 
+  &__promo {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
 
 
 
