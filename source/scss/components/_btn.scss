@@ -31,7 +31,8 @@
     background-color: var(--color-dark-gray);
   }
 
-  &--oneclick {
+  &--oneclick,
+  &--registration {
     color: var(--color-dark-gray);
     border: 1px solid var(--color-dark-gray);
     background-color: var(--color-white);

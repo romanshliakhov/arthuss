@@ -1,8 +1,20 @@
 .lang {
+  @media (max-width: 1240px) {
+    order: 1;
+  }
+
+  @media (max-width: 769px) {
+    order: initial;
+  }
+
   &__list {
     display: flex;
     align-items: center;
     grid-gap: 10px;
+
+    @media (max-width: 769px) {
+      grid-gap: 30px;
+    }
   }
 
   &__label {

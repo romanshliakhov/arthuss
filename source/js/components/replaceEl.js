@@ -9,9 +9,22 @@ let replaceSettings = {
 }
 
 let elementName = {
-  details: '.payment__details',
-  detailsParent: '.payment__inner',
-  detailsMobile: '.payment__btn',
+  headerLogo: '.header__logo',
+  headerLogoParent: '.header__inner',
+  headerLogoMobile: '.mobile__menu-head',
+
+  burger: '.burger',
+  burgerDefault: '.header__inner',
+  burgerMobile: '.mobile__menu-head',
+
+  basket: '.basket',
+  basketDefault: '.header__icons',
+  basketMobile: '.mobile__menu-head',
+
+  lang: '.lang',
+  langParent: '.header__logo',
+  langMobile: '.mobile__profile',
+
 }
 
 let items = [...document.querySelectorAll('.wrapper')];
@@ -34,10 +47,52 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
   });
 }
 
+burgerBtn = document.querySelector('.burger');
+
 window.addEventListener('resize', () => {
-  replaceElements(items, elementName.details, elementName.detailsParent, elementName.detailsMobile, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
+  if(burgerBtn) {
+    burgerBtn.addEventListener('click', function () {
+      if(burgerBtn.classList.contains('active')) {
+        console.log(burgerBtn);
+
+        replaceElements(items, elementName.headerLogo, elementName.headerLogoParent, elementName.headerLogoMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.burger, elementName.burgerDefault, elementName.burgerMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.basket, elementName.basketDefault, elementName.basketMobile, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
+      } else {
+        replaceElements(items, elementName.headerLogo, elementName.headerLogoMobile, elementName.headerLogoParent, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.burger, elementName.burgerMobile, elementName.burgerDefault, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.basket, elementName.basketMobile, elementName.basketDefault, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
+      }
+    })
+  }
+
+  replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.smallTablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  replaceElements(items, elementName.details, elementName.detailsParent, elementName.detailsMobile, replaceSettings.beforebegin, replaceSettings.afterbegin, replaceSettings.tablet);
+  if(burgerBtn) {
+    burgerBtn.addEventListener('click', function () {
+      if(burgerBtn.classList.contains('active')) {
+        console.log(burgerBtn);
+
+        replaceElements(items, elementName.headerLogo, elementName.headerLogoParent, elementName.headerLogoMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.burger, elementName.burgerDefault, elementName.burgerMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.basket, elementName.basketDefault, elementName.basketMobile, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
+      } else {
+        replaceElements(items, elementName.headerLogo, elementName.headerLogoMobile, elementName.headerLogoParent, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.burger, elementName.burgerMobile, elementName.burgerDefault, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+
+        replaceElements(items, elementName.basket, elementName.basketMobile, elementName.basketDefault, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
+      }
+    })
+  }
+
+  replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.smallTablet);
 });

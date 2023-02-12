@@ -8,12 +8,16 @@
 
 .lang__name {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 150%;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--color-heavy-rain);
   transition: all 0.4s ease;
   cursor: pointer;
+
+  @media (max-width: 769px) {
+    font-size: 16px;
+  }
 }
 
 .nav__link {
@@ -395,4 +399,21 @@
   line-height: 118%;
   letter-spacing: -0.02em;
   color: var(--color-dark-gray);
+}
+
+.mobile__navigation-link,
+.mobile__search,
+.mobile__contacts,
+.mobile__profile-name {
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  color: var(--color-dark-gray);
+}
+
+.mobile__contasts__link {
+  font-size: 12px;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-dark-charcoal);
 }
