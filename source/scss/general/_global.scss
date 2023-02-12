@@ -154,14 +154,18 @@ input[type="number"] {
 
 .container {
   position: relative;
-  max-width: 1272px;
-  // max-width: 1920px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  // padding: 0 20px;
-  padding: 0 50px;
-  // padding: 0 clamp(20px, 5.417vw, 104px);
-  // padding: s0 104px;
+  padding: 0 104px;
+
+  @media (max-width: 1440px) {
+    padding: 0 clamp(50px, 7.222vw, 104px);
+  }
+
+  @media (max-width: 1240px) {
+    padding: 0 clamp(20px, 5.04vw, 50px);
+  }
 }
 
 

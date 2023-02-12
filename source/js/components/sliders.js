@@ -17,7 +17,6 @@ let sliderHero = new Swiper(".hero__slider", {
 let sliderBanners = new Swiper(".banners__slider", {
   slidesPerView: 1,
   spaceBetween: 5,
-  // centerSlides:true,
   loop: true,
   observer: true,
   navigation: {
@@ -65,6 +64,17 @@ let sliderSocials = new Swiper(".socials__slider", {
   autoplay: {
       delay: 0,
   },
+  breakpoints: {
+    320: {
+      spaceBetween: 20,
+    },
+    576: {
+      spaceBetween: 40,
+    },
+    992: {
+      spaceBetween: 70,
+    }
+  }
 });
 
 

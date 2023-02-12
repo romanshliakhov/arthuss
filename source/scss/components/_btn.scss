@@ -9,15 +9,28 @@
 
   &--all {
     max-width: 152px;
+
+    // @media (max-width: 576px) {
+    //   max-width: 100%;
+    // }
   }
 
   &--books,
   &--about {
     max-width: 192px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
+
 
   &--blog {
     max-width: 190px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 
   &--publication {

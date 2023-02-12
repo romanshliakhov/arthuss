@@ -5,7 +5,7 @@ let replaceSettings = {
   afterend: 'afterend', // после самого элемента targetElement
   mobile: 576,
   smallTablet: 768,
-  tablet: 1006
+  tablet: 992
 }
 
 let elementName = {
@@ -24,6 +24,14 @@ let elementName = {
   lang: '.lang',
   langParent: '.header__logo',
   langMobile: '.mobile__profile',
+
+  heroSliderControls: '.hero__slider-controls',
+  heroSliderControlsParent: '.hero__inner',
+  heroSliderControlsMobile: '.hero__slider',
+
+  visionaryBanner: '.visionary__banner',
+  visionaryBannerParent: '.visionary__info',
+  visionaryBannerMobile: '.visionary__info-bot',
 
 }
 
@@ -71,6 +79,10 @@ window.addEventListener('resize', () => {
   }
 
   replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.smallTablet);
+
+  replaceElements(items, elementName.heroSliderControls, elementName.heroSliderControlsParent, elementName.heroSliderControlsMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.tablet);
+
+  replaceElements(items, elementName.visionaryBanner, elementName.visionaryBannerParent, elementName.visionaryBannerMobile, replaceSettings.beforebegin, replaceSettings.beforebegin, replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -95,4 +107,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   replaceElements(items, elementName.lang, elementName.langParent, elementName.langMobile, replaceSettings.afterend, replaceSettings.afterend, replaceSettings.smallTablet);
+
+  replaceElements(items, elementName.heroSliderControls, elementName.heroSliderControlsParent, elementName.heroSliderControlsMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.tablet);
+
+  replaceElements(items, elementName.visionaryBanner, elementName.visionaryBannerParent, elementName.visionaryBannerMobile, replaceSettings.beforebegin, replaceSettings.beforebegin, replaceSettings.tablet);
 });

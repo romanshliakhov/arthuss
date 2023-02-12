@@ -1,10 +1,10 @@
 .block {
-  margin-bottom: 200px;
+  margin-bottom: clamp(100px, 13.889vw, 200px);
 
   &__wrapp {
     display: flex;
     flex-direction: column;
-    grid-gap: 50px;
+    grid-gap: clamp(20px, 5.04vw, 50px);
   }
 
   &__head {
@@ -17,6 +17,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+      grid-gap: 30px;
+    }
   }
 
   &__slider {
@@ -24,15 +29,25 @@
 
     &--design {
       width: 100%;
+
+      @media (max-width: 1240px) {
+        width: 100vw;
+      }
     }
   }
 
   &__slider-slide {
-    max-width: 400px;
+    max-width: clamp(265px, 40.323vw, 400px);
     width: 100%;
 
     &--small {
       max-width: 296px;
+    }
+  }
+
+  &__slider-controls {
+    @media (max-width: 576px) {
+      display: none;
     }
   }
 }

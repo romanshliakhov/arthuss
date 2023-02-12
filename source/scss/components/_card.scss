@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  grid-gap: 24px;
+  grid-gap: clamp(16px, 2.419vw, 24px);
 
   &__status {
     position: absolute;

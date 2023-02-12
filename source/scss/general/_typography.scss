@@ -28,7 +28,7 @@
 
 .title {
   font-family: var(--font-family-mariupol);
-  font-size: 36px;
+  font-size: clamp(28px, 3.629vw, 36px);
   line-height: 122%;
   font-weight: 700;
   color: var(--color-dark-gray);
@@ -36,14 +36,14 @@
 
 .subtitle {
   font-family: var(--font-family-mariupol);
-  font-size: 32px;
+  font-size: clamp(26px, 3.226vw, 32px);
   line-height: 119%;
   font-weight: 700;
   color: var(--color-dark-gray);
 }
 
 .text {
-  font-size: 16px;
+  font-size: clamp(14px, 1.613vw, 16px);
   line-height: 150%;
   color: var(--color-dark-charcoal);
 }
@@ -119,8 +119,8 @@
 .news__title,
 .publication__block-head {
   font-family: var(--font-family-mariupol);
-  font-size: 24px;
-  line-height: 125%;
+  font-size: clamp(20px, 1.667vw, 24px);
+  line-height: clamp(26px, 2.083vw, 30px);
   font-weight: 700;
   color: var(--color-dark-gray);
 }
@@ -135,14 +135,13 @@
 
 .visionary__info-title {
   font-family: var(--font-family-mariupol);
-  font-size: 58px;
-  line-height: 166%;
+  font-size: clamp(36px, 5.847vw, 58px);
   font-weight: 700;
   color: var(--color-dark-gray);
 }
 
 .card__status {
-  font-size: 14px;
+  font-size: clamp(12px, 1.411vw, 14px);
   line-height: 129%;
   font-weight: 700;
   color: var(--color-light-grey);
@@ -180,7 +179,7 @@
 
 .socials__link-name {
   font-family: var(--font-family-mariupol);
-  font-size: 56px;
+  font-size: clamp(34px, 3.889vw, 56px);
   line-height: 100%;
   font-weight: 700;
   letter-spacing: -0.02em;
