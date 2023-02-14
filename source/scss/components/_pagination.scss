@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 50px;
+  grid-gap: clamp(30px, 3.472vw, 50px);
 
   &__list {
     display: flex;
     align-items: flex-end;
-    grid-gap: 30px;
+    grid-gap: clamp(20px, 2.083vw, 30px);
   }
 
   &__list-link {

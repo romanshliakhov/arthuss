@@ -10,6 +10,55 @@ if (spollersArray.length > 0) {
         initSpollers(spollersRegular);
     }
 
+    // Получение спойлеров с медиа-запросами
+    const spollersMedia = Array.from(spollersArray).filter(function (item, index, self) {
+      return item.dataset.spollers.split(",")[0];
+    });
+
+
+    // Инициализация спойлеров с медиа-запросами
+    if(spollersMedia.length > 0) {
+      const breakpointsArray = [];
+      spollersMedia.forEach(item => {
+        const params = item.dataset.spollers;
+        const breakpoint ={};
+        const paramsArray = params.split(",");
+        breakpoint.value = paramsArray[0];
+        breakpoint.type = paramsArray[1] ? paramsArray[1].trim() : "max";
+        breakpoint.item = item;
+        breakpointsArray.push(breakpoint);
+      });
+
+      // Получаем уникальные брейк-поинты
+      let mediaQueries = breakpointsArray.map(function (item) {
+        return '(' + item.type + "-width: " + item.value + "px)," + item.value + ',' + item.type;
+      });
+      mediaQueries = mediaQueries.filter(function (item, index, self) {
+        return self.indexOf(item) === index;
+      });
+
+      // Работа с каждым брейк-поинтом
+      mediaQueries.forEach(breakpoint => {
+        const paramsArray = breakpoint.split(",");
+        const mediaBreakpoint = paramsArray[1];
+        const mediaType = paramsArray[2];
+        const matchMedia = window.matchMedia(paramsArray[0]);
+
+        // Обьекты с нужными условиями
+        const spollersArray = breakpointsArray.filter(function (item) {
+          if (item.value === mediaBreakpoint && item.type === mediaType) {
+            return true;
+          }
+        });
+
+        // Событие
+        matchMedia.addListener(function () {
+          initSpollers(spollersArray, matchMedia);
+        });
+        initSpollers(spollersArray, matchMedia);
+      });
+    }
+
     // Инициализация
     function initSpollers(spollersArray, matchMedia = false) {
         spollersArray.forEach(spollersBlock => {

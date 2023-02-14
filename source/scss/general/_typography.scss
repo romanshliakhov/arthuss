@@ -94,7 +94,8 @@
 }
 
 
-.about__more-link {
+.about__more-link,
+.footer__more-link {
   font-size: 14px;
   line-height: 143%;
   font-weight: 700;
@@ -110,8 +111,8 @@
 }
 
 .news__pubtime {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: clamp(12px, 0.972vw, 14px);
+  line-height: clamp(18px, 1.389vw, 20px);
   font-weight: 400;
   color: var(--color-heavy-rain);
 }
@@ -210,8 +211,8 @@
 }
 
 .publication__text {
-  font-size: 16px;
-  line-height: 150%;
+  font-size: clamp(14px, 1.111vw, 16px);
+  line-height: clamp(21px, 1.667vw, 24px);
   font-weight: 400;
   color: var(--color-dark-gray);
 }
@@ -415,4 +416,10 @@
   line-height: 150%;
   font-weight: 400;
   color: var(--color-dark-charcoal);
+}
+
+.footer__phone {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-dark-gray);
 }

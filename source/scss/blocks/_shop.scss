@@ -4,7 +4,7 @@
   &__wrapp {
     display: grid;
     grid-template-columns: 296px auto;
-    grid-gap: 120px;
+    grid-gap: clamp(60px, 8.333vw, 120px);
   }
 
   &__info-head {
@@ -24,8 +24,12 @@
   &__products {
     margin-bottom: 80px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px 16px;
+
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__pagination {

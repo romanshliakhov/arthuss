@@ -8,51 +8,69 @@
         </picture>
       </a>
 
-      <div class="footer__mid">
+      <div class="footer__mid" data-spollers="769, max" data-one-spoller>
         <div class="footer__mid-block footer__mid-block--about">
-          <p class="footer__title">Про ArtHuss</p>
+          <button class="footer__title footer__trigger" tabindex="-1" type="button" data-spoller>Про ArtHuss</button>
 
-          <p class="footer__text">Наші книги надихають, наповнюють життя естетикою і актуальними знаннями.</p>
+          <div class="footer__mid-spoller">
+            <div class="footer__mid-content">
+              <p class="footer__text">Наші книги надихають, наповнюють життя естетикою і актуальними знаннями.</p>
 
-          <a class="about__more-link" href="#">Читати більше</a>
+              <a class="footer__more-link" href="#">Читати більше</a>
+            </div>
+          </div>
         </div>
 
         <div class="footer__mid-block footer__mid-block--adress">
-          <p class="footer__title">Адреса</p>
+          <button class="footer__title footer__trigger" tabindex="-1" type="button" data-spoller>Адреса</button>
 
-          <p class="footer__text">Вулиця Шахтарська 5, Київ, Україна</p>
+          <div class="footer__mid-spoller">
+            <div class="footer__mid-content">
+              <p class="footer__text">Вулиця Шахтарська 5, Київ, Україна</p>
+            </div>
+          </div>
         </div>
 
         <div class="footer__mid-block footer__mid-block--navigation">
-          <p class="footer__title">Навігація</p>
+          <button class="footer__title footer__trigger" tabindex="-1" type="button" data-spoller>Навігація</button>
 
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="/shop.html">Магазин</a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="/author.html">Блог</a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="#">Акції</a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="#">Брендування книг</a>
-            </li>
-          </ul>
+          <div class="footer__mid-spoller">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="/shop.html">Магазин</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="/author.html">Блог</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Акції</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Брендування книг</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="footer__mid-block footer__mid-block--help">
-          <p class="footer__title">Отримати допомогу</p>
+          <button class="footer__title footer__trigger" tabindex="-1" type="button" data-spoller>Отримати допомогу</button>
 
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="#">Доставка та оплата</a>
-            </li>
-            <li class="footer__list-item">
-              <a class="footer__list-link" href="#">Контакти</a>
-            </li>
-          </ul>
+          <div class="footer__mid-spoller">
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Доставка та оплата</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__mid-block footer__mid-block--contacts">
+          <p class="footer__title">Зв’язатись</p>
+
+          <a class="footer__phone" href="tel:380442276963">+38 (044) 227-69-63</a>
         </div>
 
         <div class="footer__mid-block footer__mid-block--subscribe">
@@ -60,7 +78,7 @@
 
           <p class="footer__text">Дізнавайтесь першими про акції та новинки від видавництва ArtHuss</p>
 
-          <form class="subscribe">
+          <form class="footer__subscribe subscribe">
             <label class="subscribe__label">
               <input class="subscribe__email" type="text" placeholder="Email">
               <button class="subscribe__btn btn btn--subscribe">Підписатись</button>
@@ -122,7 +140,7 @@
             <a class="privacy" href="#">Privacy statement</a>
           </div>
 
-          <div class="copyright">© 2022 ArtHuss. Всі права захищені</div>
+          <div class="footer__copyright copyright">© 2022 ArtHuss. Всі права захищені</div>
         </div>
       </div>
     </div>

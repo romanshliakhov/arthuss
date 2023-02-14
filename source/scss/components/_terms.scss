@@ -10,5 +10,9 @@
     width: 2px;
     height: 14px;
     background-color: var(--color-dark-gray);
+
+    @media (max-width: 769px) {
+      display: none;
+    }
   }
 }

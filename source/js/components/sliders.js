@@ -3,7 +3,6 @@ import Swiper from '../vendor/swiper.js';
 // Hero slider
 let sliderHero = new Swiper(".hero__slider", {
   slidesPerView: 1,
-  spaceBetween: 5,
   loop: true,
   observer: true,
   navigation: {

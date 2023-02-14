@@ -1,15 +1,23 @@
 .blog {
-  margin-bottom: 100px;
+  margin-bottom: clamp(70px, 6.944vw, 100px);
 
   &__wrapp {
     display: flex;
     flex-direction: column;
-    grid-gap: 46px;
+    grid-gap: clamp(30px, 3.194vw, 46px);
   }
 
   &__news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 46px 16px;
+
+    @media (max-width: 1240px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 769px) {
+      grid-template-columns: 100%;
+    }
   }
 }
