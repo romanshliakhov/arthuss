@@ -36,13 +36,6 @@
     }
   }
 
-  &__lang {
-    @media (max-width: 769px) {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
-
   &__nav {
     @media (max-width: 1240px) {
       max-width: 100%;

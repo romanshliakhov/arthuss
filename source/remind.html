@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ua">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <form class="form">
+        <div class="form__title title">Пригадати пароль</div>
+        <div class="form__descr">Введіть дані для скидання пароля</div>
+
+        <div class="form__content">
+          <fieldset class="form__fieldset">
+            <label class="form__label">
+              <input class="form__input" type="email" name="email" placeholder="E-mail">
+            </label>
+          </fieldset>
+        </div>
+
+        <button class="form__btn btn btn--remind">Відправити</button>
+      </form>
+    </main>
+
+    @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
