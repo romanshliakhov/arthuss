@@ -1,7 +1,5 @@
 .card {
   position: relative;
-  max-width: 400px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   grid-gap: clamp(16px, 2.419vw, 24px);
@@ -39,6 +37,13 @@
 
   &__image {
     display: flex;
+
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__info-head {

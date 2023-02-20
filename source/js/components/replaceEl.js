@@ -33,6 +33,9 @@ let elementName = {
   visionaryBannerParent: '.visionary__info',
   visionaryBannerMobile: '.visionary__info-bot',
 
+  shopFilters: '.shop__aside',
+  shopFiltersParent: '.shop__wrapp',
+  shopFiltersMobile: '.shop__info-head',
 }
 
 let items = [...document.querySelectorAll('.wrapper')];
@@ -83,6 +86,8 @@ window.addEventListener('resize', () => {
   replaceElements(items, elementName.heroSliderControls, elementName.heroSliderControlsParent, elementName.heroSliderControlsMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.tablet);
 
   replaceElements(items, elementName.visionaryBanner, elementName.visionaryBannerParent, elementName.visionaryBannerMobile, replaceSettings.beforebegin, replaceSettings.beforebegin, replaceSettings.tablet);
+
+  replaceElements(items, elementName.shopFilters, elementName.shopFiltersParent, elementName.shopFiltersMobile, replaceSettings.afterend, replaceSettings.afterbegin, replaceSettings.tablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -111,4 +116,6 @@ window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.heroSliderControls, elementName.heroSliderControlsParent, elementName.heroSliderControlsMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.tablet);
 
   replaceElements(items, elementName.visionaryBanner, elementName.visionaryBannerParent, elementName.visionaryBannerMobile, replaceSettings.beforebegin, replaceSettings.beforebegin, replaceSettings.tablet);
+
+  replaceElements(items, elementName.shopFilters, elementName.shopFiltersParent, elementName.shopFiltersMobile, replaceSettings.afterend, replaceSettings.afterbegin, replaceSettings.tablet);
 });

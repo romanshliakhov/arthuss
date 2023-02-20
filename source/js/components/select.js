@@ -1,6 +1,6 @@
 let sorting = document.querySelectorAll('.shop__sort');
 let filter = document.querySelectorAll('.shop__filter');
-const breakpoint = 576;
+const breakpoint = 991;
 
 let selectScript = function (select) {
     select.forEach((item) => {

@@ -5,10 +5,15 @@
     display: grid;
     grid-template-columns: 296px auto;
     grid-gap: clamp(60px, 8.333vw, 120px);
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+      grid-gap: clamp(20px, 3.024vw, 30px);
+    }
   }
 
   &__info-head {
-    margin-bottom: 45px;
+    margin-bottom: clamp(30px, 3.629vw, 45px);
     display: flex;
     align-items: center;
     grid-gap: 44px;
@@ -19,16 +24,24 @@
     display: flex;
     align-items: center;
     grid-gap: 20px;
+
+    @media all and (max-width: 992px) {
+      justify-content: space-between;
+    }
   }
 
   &__products {
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 60px 16px;
+    grid-gap: clamp(40px, 6.048vw, 60px) 16px;
 
     @media (max-width: 1440px) {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
     }
   }
 
@@ -69,6 +82,13 @@
     align-items: center;
   }
 
+  &__aside {
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+  }
+
+
   &__sort {
     position: relative;
   }
@@ -106,18 +126,39 @@
   }
 
   &__sort-item {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     cursor: pointer;
+  }
+
+  &__aside-inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: var(--color-gray);
+
+    @media all and (max-width: 992px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__filters-head {
+    @media all and (min-width: 993px) {
+      display: none;
+    }
   }
 
   &__filters {
     display: flex;
     flex-direction: column;
     grid-gap: 20px;
-    padding: 20px;
-    background-color: var(--color-gray);
   }
 
   &__filter {
@@ -126,20 +167,31 @@
     grid-gap: 10px;
   }
 
-  &__filter-head {
-    @media all and (min-width: 768px) {
-      display: none;
-    }
-  }
+
 
   &__filter-header {
     display: flex;
     align-items: center;
     grid-gap: 20px;
 
-    @media all and (min-width: 768px) {
+    svg {
+      display: none;
+    }
+
+    @media all and (max-width: 992px) {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      grid-gap: 26px;
+      padding: 10px 16px;
+      background-color: var(--color-gray);
+      border-radius: 30px;
+      transition: all 0.1s ease-in-out;
+
+      cursor: pointer;
       svg {
-        display: none;
+        display: block;
       }
     }
   }
@@ -148,5 +200,27 @@
     display: flex;
     flex-direction: column;
     grid-gap: 10px;
+
+    @media (max-width: 992px) {
+      display: none;
+      position: absolute;
+      right: 0;
+      padding: 10px 16px;
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-gap: 20px;
+      border-radius: 10px;
+      background-color: var(--color-white);
+      z-index: -1;
+      opacity: 0;
+      visibility: visible;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+
+  &__filter-item {
+    cursor: pointer;
   }
 }
