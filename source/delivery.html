@@ -7,7 +7,174 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__wrapp">
+            <a class="breadcrumbs__prev" href="/">Головна</a>
+            <span class="breadcrumbs__current">Оплата/доставка</span>
+          </div>
+        </div>
+      </section>
 
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery__wrapp">
+            <div class="delivery__tabs tabs">
+              <ul class="delivery__tabs-controls">
+                <li class="delivery__controls-btns tablinks active" tabs-btn="payment">
+                  <button class="delivery__controls-btn title tabs__btn" >
+                    <span>Оплата</span>
+                  </button>
+                </li>
+                <li class="delivery__controls-btns tablinks" tabs-btn="delivery">
+                  <button class="delivery__controls-btn title tabs__btn" >
+                      <span>Доставка</span>
+                  </button>
+                </li>
+                <li class="delivery__controls-btns tablinks" tabs-btn="swap">
+                  <button class="delivery__controls-btn title tabs__btn" >
+                      <span>Обмін товару</span>
+                  </button>
+                </li>
+              </ul>
+
+              <ul class="delivery__tabcontents">
+                <li class="delivery__tabcontent tabcontent active" tabs-content="payment">
+                  <ul class="delivery__information">
+                    <li class="delivery__information-item">
+                      <div class="delivery__information-heading">Розрахунок при отриманні</div>
+
+                      <div class="delivery__information-text">
+                        <p>Оплатіть замовлення при отриманні товару в офісі видавництва ArtHuss або у відділенні Нової Пошти</p>
+
+                        <ul>
+                          <li>Увага! Нова Пошта знімає додаткову комісію за переказ коштів у випадку розрахунку при отриманні.</li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="delivery__information-item">
+                      <div class="delivery__information-heading">Оплата карткою</div>
+
+                      <div class="delivery__information-text">
+                        <p>Оплатіть товар онлайн або в офісі видавництва ArtHuss банківською карткою Visa чи Mastercard.</p>
+
+                        <ul>
+                          <li>Щоб оплатити карткою замовлення онлайн - виберіть спосіб "Оплата карткою" при оформленні замовлення у кошику нашого інтернет-магазину.</li>
+                          <li>Або переведіть кошти на карту ПриватБанку №5218-5722-2234-4595 (Кожемяка К.П.)</li>
+                        </ul>
+
+                        <p>Увага! Будь ласка, вказуйте інформацію про замовлення (ПІБ, номер замовлення, контактний телефон (вказаний при оформленні), тощо) в призначенні платежу при перерахунку коштів на карту директора видавництва.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="delivery__tabcontent tabcontent" tabs-content="delivery">
+                  <div class="delivery__tabcontent-information">
+                    <ul class="delivery__information">
+                      <li class="delivery__information-item">
+                        <p class="delivery__information-alert">Відправлення здійснюється протягом 2-5 робочих днів (сб-нд вихідні) з моменту оформлення замовлення на сайті.</p>
+
+                        <div class="delivery__information-heading">Самовивіз з офісу видавництва</div>
+
+                        <div class="delivery__information-text">
+                          <p>Адреса: м. Київ, вул. Шахтарська, 5</p>
+
+                          <p>Самовивіз замовлень з понеділка по п'ятницю 9:00-18:00, якщо немає повітряних тривог і є світло...</p>
+                        </div>
+                      </li>
+
+                      <li class="delivery__information-item">
+                        <div class="delivery__information-heading">Доставка у відділення «Нова Пошта»</div>
+
+                        <div class="delivery__information-text">
+                          <ul>
+                            <li>Доставка на відділення Нової Пошти у вашому місті по всій Україні. Доставка за рахунок отримувача.</li>
+                            <li>Оформлені після 14:00 замовлення відправляються на наступний день.</li>
+                            <li>Відвантаження замовлень на Нову Пошту робимо щодня, крім вихідних.</li>
+                            <li>Вартість доставки згідно тарифів компанії-перевізника.</li>
+                            <li>Увага! Нова Пошта знімає додаткову комісію за переказ коштів у випадку розрахунку при отриманні. </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="delivery__information-item">
+                        <div class="delivery__information-heading">Адресна доставка кур'єром Нової Пошти</div>
+
+                        <div class="delivery__information-text">
+                          <ul>
+                            <li>Адресна доставка кур'єром Нової Пошти здійснюється за рахунок отримувача.</li>
+                            <li>Для замовлення адресної доставки кур'єром Нової Пошти повідомте менеджера під час уточнення замовлення по телефону.</li>
+                            <li>Оформлені після 14:00 замовлення відправляються на наступний день.</li>
+                            <li>Відвантаження замовлень на Нову Пошту робимо щодня, крім вихідних.</li>
+                            <li>Вартість доставки згідно тарифів компанії-перевізника.</li>
+                            <li>Увага! Нова Пошта знімає додаткову комісію за переказ коштів у випадку розрахунку при отриманні.</li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="delivery__information-item">
+                        <div class="delivery__information-heading">Доставка Укрпоштою закордон</div>
+
+                        <div class="delivery__information-text">
+                          <p>Оформити таке замовлення просто:</p>
+
+                          <ol>
+                            <li>Зайдіть у онлайн-магазин видавництва. Обреріть книгу та оплатіть замовлення на сайті. Обов'язково додавайте товар у кошик, щоб була можливість оплатити замовлення через платіжну систему LiqPay.</li>
+                            <li>На електронну скриньку, яку ви вказали при оформленні замовлення, має надійти лист-підтвердження. У відповідь на нього напишіть повну адресу для відправки, включно з індексом. Менеджерка з продажу відповість та напише вам деталі.
+                            </li>
+                            <li>Після відправлення ми надішлемо вам номер для відстеження посилки від Укрпошта, і зовсім скоро книги будуть у вас! Точний термін не можемо передбачити, адже пошта різних країн працює по-різному.</li>
+                          </ol>
+
+                          <p>На росію з очевидних причин ми не надсилаємо. А усім іншим ― приємного читання!</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="delivery__tabcontent tabcontent" tabs-content="swap">
+                  <div class="delivery__tabcontent-information">
+                    <ul class="delivery__information">
+                      <li class="delivery__information-item">
+                        <div class="delivery__information-text">
+                          <p>Шановні читачі, звертаємо Вашу увагу на те, що друковані видання не підлягають поверненню відповідно до Постанови Кабінету Міністрів України від 19 березня 1994 р. № 172 <a href="#">"Про реалізацію окремих положень Закону України "Про захист прав споживачів"</a>.</p>
+
+                          <p>Проте при своєчасному виявленні механічних пошкоджень чи типографічних недоліків, ми допоможемо обміняти Ваш примірник на аналогічний. Можливість обміну діє протягом 30 днів з моменту отримання товару. Доставка здійснюється коштом видавництва до відділення Нової пошти. Для обміну звертайтеся, будь ласка, у відділ продажу +38 (044) 227-69-63 або arthussbooks@gmail.com</p>
+
+                          <p>Діяльність нашого інтернет-магазину здійснюється у відповідності до вимог Закону України «Про захист прав споживачів»</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <aside class="contacts">
+              <div class="contacts__title">Зв’яжіться з нами</div>
+
+              <ul class="contacts__items">
+                <li class="contacts__item">
+                  <div class="contacts__item-head">Графік роботи відділу продажів:</div>
+                  <div class="contacts__item-details">Пн - Пт, 9-00 - 18-00</div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-head">Адреса:</div>
+                  <div class="contacts__item-details">м. Київ, 04074, вул. Шахтарська, 5</div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-head">Телефон:</div>
+                  <a class="contacts__item-details" href="tel:380442276963">+38(044) 227-69-63</a>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-head">Email:</div>
+                  <a class="contacts__item-details" href="mailto:arthussbooks@gmail.com">arthussbooks@gmail.com</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})

@@ -7,7 +7,27 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="error">
+        <div class="container">
+          <div class="error__inner">
+            <div class="error__image">
+              <div class="error__text">404</div>
+              <svg >
+                <use href='img/sprite/sprite.svg#404'></use>
+              </svg>
+            </div>
 
+            <h1 class="error__title title">Запитувана сторінка не знайдена!</h1>
+
+            <div class="error__descr">Нам не вдалося знайти сторінку, яку ви шукали, але у нас є багато цікавих книг. Знайти їх можна на <a class="error__link" href="/">головній сторінці</a></div>
+
+            <div class="error__btns">
+              <a class="error__btn btn btn--back" href="#">Повернутися</a>
+              <a class="error__btn btn btn--main" href="#">Головна</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})
