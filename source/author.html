@@ -7,7 +7,132 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="author">
+        <div class="container">
+          <div class="author__wrapp">
+            <div class="author__preview">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__wrapp">
+                  <a class="breadcrumbs__prev" href="/">Головна</a>
+                  <a class="breadcrumbs__prev" href="#">Автор</a>
+                  <span class="breadcrumbs__current">Ребека Етвуд</span>
+                </div>
+              </div>
 
+              <div class="author__heading">
+                <h1 class="author__title title">Ребека Етвуд</h1>
+                <p class="author__heading-text">Ребекка Етвуд отримала ступінь бакалавра мистецтв з живопису в Род-Айлендській школі дизайну перш ніж розпочати кар'єру дизайнера-консультанта для великих торгових мереж. Сьогодні вона дизайнерка текстилю та художниця, яка поєднує традиційні прийоми з ручним розписом для створення колекції товарів для дому. Її інтерес до кольору та малюнка глибоко вкорінений у дитинстві на Кейп-Коді та її повсякденних спостереженнях за життям у Брукліні, де вона живе з чоловіком та дочкою.</p>
+              </div>
+            </div>
+
+            <div class="author__banner">
+              <picture>
+                <source type='image/webp' srcset='img/banners/rebeka.webp'>
+                <img width='608' height='500' src='img/banners/rebeka.png' alt='Ребека Етвуд'>
+              </picture>
+            </div>
+          </div>
+
+          <!-- <div class="author__wrapp author__wrapp--empty">
+            <div class="author__preview">
+              <div class="breadcrumbs">
+                <div class="breadcrumbs__wrapp">
+                  <a class="breadcrumbs__prev" href="/">Головна</a>
+                  <a class="breadcrumbs__prev" href="#">Автор</a>
+                  <span class="breadcrumbs__current">Ребека Етвуд</span>
+                </div>
+              </div>
+
+              <div class="author__heading">
+                <h1 class="author__title title">Ребека Етвуд</h1>
+                <p class="author__heading-text">Ребекка Етвуд отримала ступінь бакалавра мистецтв з живопису в Род-Айлендській школі дизайну перш ніж розпочати кар'єру дизайнера-консультанта для великих торгових мереж. Сьогодні вона дизайнерка текстилю та художниця, яка поєднує традиційні прийоми з ручним розписом для створення колекції товарів для дому. Її інтерес до кольору та малюнка глибоко вкорінений у дитинстві на Кейп-Коді та її повсякденних спостереженнях за життям у Брукліні, де вона живе з чоловіком та дочкою.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="author__bottom block">
+        <div class="container">
+          <div class="block__wrapp">
+            <div class="block__info-head">
+              <div class="block__info-title title">Всі книги</div>
+
+              <div class="block__products-count"><span>3</span> позиції</div>
+            </div>
+
+            <ul class="block__news">
+              <li class="block__news-item">
+                <div class="card">
+                  <a class="card__image" href="/product-page.html">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card1.webp'>
+                      <img width='400' height='500' src='img/card/card1.png' alt='Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі'>
+                    </picture>
+                  </a>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__authors" href="/author.html">Ребека Етвуд</a>
+                      <a class="card__title" href="/product-page.html">Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">440 грн</div>
+                      <div class="card__price-regular">550 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="block__news-item">
+                <div class="card">
+                  <a class="card__image" href="/product-page.html">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card2.webp'>
+                      <img width='400' height='500' src='img/card/card2.png' alt='Заґмайстер і Волш. Краса (БЕЗ СРІБЛЕННЯ ОБРІЗУ БЛОКУ)'>
+                    </picture>
+                  </a>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__authors" href="/author.html">Ребека Етвуд</a>
+                      <a class="card__title" href="/product-page.html">Заґмайстер і Волш. Краса (БЕЗ СРІБЛЕННЯ ОБРІЗУ БЛОКУ)</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">610 грн</div>
+                      <div class="card__price-regular">720 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="block__news-item">
+                <div class="card">
+                  <a class="card__image" href="/product-page.html">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card1.webp'>
+                      <img width='400' height='500' src='img/card/card1.png' alt='Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі'>
+                    </picture>
+                  </a>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__authors" href="/author.html">Ребека Етвуд</a>
+                      <a class="card__title" href="/product-page.html">Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">440 грн</div>
+                      <div class="card__price-regular">550 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
     </main>
 
     @include('partials/footer.html',{})

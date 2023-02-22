@@ -7,7 +7,138 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__top">
+              <div class="about__preview">
+                <section class="breadcrumbs">
+                  <div class="breadcrumbs__wrapp">
+                    <a class="breadcrumbs__prev" href="/">Головна</a>
+                    <span class="breadcrumbs__current">Про видавництво ArtHuss</span>
+                  </div>
+                </section>
 
+                <div class="about__heading">
+                  <h1 class="about__title title">Видавництво Arthuss:<br> Наша Історія</h1>
+                  <p class="about__heading-text">Наша місія - розвивати креативну професійну спільноту, розповідати легко про складне, розширити світогляд читачів і наповнити життя красою та естетикою.</p>
+                </div>
+              </div>
+
+              <div class="about__banner">
+                <picture>
+                  <source type='image/webp' srcset='img/banners/about.webp'>
+                  <img width='608' height='500' src='img/banners/about.png' alt='Про видавництво'>
+                </picture>
+              </div>
+            </div>
+
+            <div class="about__details">
+              <div class="about__content">
+                <p>Головний камінь спотикання у дослідженнях про мистецтво – заплутана та архаїчна мова. Маючи бажання пізнати нове, інколи складно це зробити, бо доводиться продиратися через текст. Саме тому 15 січня 2016 року було засноване видавництво ArtHuss з метою легко розповідати про складне. Адже у процесі глобалізації мистецтво стало більш доступним: будь-яка репродукція картини поміщається у вашому смартфоні. Захоплення арт-сферою не має бути привілеєм, адже воно надихає. ArtHuss допомагає дізнатися більше про улюблені теми не залежно від віку чи статусу.</p>
+                <p>Видавництво стежить за світовими тенденціями культури, тому наші книги висвітлюють актуальні питання, а не застарілі факти. Ми навіть підписані на Інстаграм Деміена Хьорста, аби бути в темі. Звісно, у роботі з людьми творчих професій трапляються казуси. Кажуть, що легше писати та видавати книги про мертвих, ніж живих митців. Але ми йдемо наперекір упередженням і робимо це. Наприклад, при підготовці альбому арт-проекту, де імена мають бути в алфавітному порядку, може знайтися той, хто хотів би бути першим незважаючи ні на що. Проте уміння шукати компроміси та бажання творити долають перепони. Бо важливіша книга, а не складнощі. Тримаючи в руках готове ілюстроване видання отримуєш естетичне задоволення.</p>
+                <p>Робота в мистецькій атмосфері також дарує несподівані творчі проекти. Наприклад, при підготовці книги Сари Торнтон «33 митці у трьох актах» вивчали процес створення книги. Скільки миль пролетіла авторка, зі скількома художниками говорила… На жаль, серед них не було жодного українського. Так з’явився наш перфоманс «Невідомі» (для Сари Торнтон) інтерв’ю з нашими митцями, які розповідали про себе публіці. Таким чином процес видання книг також перетворюється на творчість та дарує нові відкриття.</p>
+                <p>За кожною книгою є власна історія грандіозних планів, маленьких невдач, спонтанних рішень та великої насолоди видавати цікавий продукт. І якщо спочатку ArtHuss орієнтувався на візуальну культуру, то зараз стає зрозуміло, що обмежитися нею неможливо! Адже у світі ще більше прекрасного. Мистецький дискурс поширюється і на моду, дизайн, архітектуру… Тож плануємо розширювати тематику видань.</p>
+                <p>Життєвий простір, наповнений естетикою та мистецтвом у будь-яких проявах надихає людину на творчість в буденності.</p>
+                <p>Будьте з <a href="https://www.facebook.com/ArtHussUA/">ArtHuss</a> та розфарбовуйте своє життя яскравими барвами.</p>
+              </div>
+
+              <div class="about__subscribe subscribe">
+                <p class="subscribe__title">Підпишіться на розсилку</p>
+
+                <p class="subscribe__text">Дізнавайтесь першими про акції та новинки від видавництва ArtHuss</p>
+
+                <form class="subscribe__form">
+                  <label class="subscribe__label">
+                    <input class="subscribe__email" type="text" placeholder="Email">
+                    <button class="subscribe__btn btn btn--subscribe">Підписатись</button>
+                  </label>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about__bottom block">
+        <div class="container">
+          <div class="block__wrapp">
+            <div class="block__head">
+              <h2 class="subtitle">Хочу читати книжки</h2>
+            </div>
+
+            <ul class="block__news">
+              <li class="block__news-item">
+                <div class="card">
+                  <a class="card__image" href="/product-page.html">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card1.webp'>
+                      <img width='400' height='500' src='img/card/card1.png' alt='Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі'>
+                    </picture>
+                  </a>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__authors" href="/author.html">Ребека Етвуд</a>
+                      <a class="card__title" href="/product-page.html">Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">440 грн</div>
+                      <div class="card__price-regular">550 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="block__news-item">
+                <div class="card">
+                  <a class="card__image" href="/product-page.html">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card2.webp'>
+                      <img width='400' height='500' src='img/card/card2.png' alt='Заґмайстер і Волш. Краса (БЕЗ СРІБЛЕННЯ ОБРІЗУ БЛОКУ)'>
+                    </picture>
+                  </a>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__authors" href="/author.html">Ребека Етвуд</a>
+                      <a class="card__title" href="/product-page.html">Заґмайстер і Волш. Краса (БЕЗ СРІБЛЕННЯ ОБРІЗУ БЛОКУ)</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">610 грн</div>
+                      <div class="card__price-regular">720 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="block__news-item">
+                <div class="card">
+                  <a class="card__image" href="/product-page.html">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card1.webp'>
+                      <img width='400' height='500' src='img/card/card1.png' alt='Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі'>
+                    </picture>
+                  </a>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__authors" href="/author.html">Ребека Етвуд</a>
+                      <a class="card__title" href="/product-page.html">Перетвори свій дім. Посібник з організовування та усвідомлення цілей своєї оселі</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">440 грн</div>
+                      <div class="card__price-regular">550 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
     </main>
 
     @include('partials/footer.html',{})

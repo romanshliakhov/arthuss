@@ -1,0 +1,30 @@
+.author {
+  padding-bottom: clamp(50px, 5vw, 72px);
+
+  &__wrapp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px clamp(30px, 8.333vw, 120px);
+
+    &--empty {
+      grid-template-columns: 100%;
+    }
+  }
+
+  &__banner {
+    picture,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__heading {
+    max-width: 816px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 2.222vw, 32px);
+  }
+
+}

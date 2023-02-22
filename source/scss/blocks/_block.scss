@@ -50,4 +50,17 @@
       display: none;
     }
   }
+
+  &__info-head {
+    display: flex;
+    align-items: center;
+    grid-gap: 44px;
+  }
+
+  &__products-count {
+    font-size: 14px;
+    line-height: 143%;
+    font-weight: 600;
+    color: var(--color-heavy-rain);
+  }
 }
