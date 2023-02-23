@@ -76,7 +76,18 @@ let sliderSocials = new Swiper(".socials__slider", {
   }
 });
 
-
+// Feedback slider
+let sliderFeedbacks = new Swiper(".branding__feedbacks-slider", {
+  slidesPerView: 1,
+  spaceBetween: 5,
+  loop: true,
+  observer: true,
+  navigation: {
+      nextEl: ".branding__slider-next",
+      prevEl: ".branding__slider-prev",
+      clickable: true,
+  },
+});
 
 
 

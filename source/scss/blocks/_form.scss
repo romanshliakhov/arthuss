@@ -50,7 +50,7 @@
   &__input {
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #E9E9E9;
+    background-color: var(--color-gray);
     font-size: 16px;
     line-height: 24px;
     color: var(--color-dark-gray);
@@ -107,6 +107,23 @@
       opacity: 0;
       visibility: hidden;
       transition: all 0.4s ease;
+    }
+  }
+
+  &__textarea {
+    min-height: 88px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--color-gray);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-dark-gray);
+    resize: none;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-dark-gray);
     }
   }
 

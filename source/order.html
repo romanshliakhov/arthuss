@@ -7,7 +7,209 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__wrapp">
+            <a class="breadcrumbs__prev" href="/">Головна</a>
+            <a class="breadcrumbs__prev" href="/basket.html">Кошик</a>
+            <span class="breadcrumbs__current">Оформлення замовлення</span>
+          </div>
+        </div>
+      </section>
 
+      <section class="order">
+        <div class="container">
+          <form class="order__form">
+            <h1 class="order__title">Оформлення замовлення</h1>
+
+            <div class="order__top">
+              <div class="order__delivery">
+                <div class="order__form-heading">Оберіть зручний спосіб доставки:</div>
+
+                <div class="order__radio-list">
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="delivery" checked>
+                      <span class="order__text">Відділення/поштомат Нової пошти (за тарифами Нової пошти)</span>
+                    </label>
+                  </fieldset>
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="delivery">
+                      <span class="order__text">Самовивіз із видавництва (вул. Шахтарська, 5, Київ, 04074)</span>
+                    </label>
+                  </fieldset>
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="delivery">
+                      <span class="order__text">Адресна доставка кур’єром Нової Пошти (за тарифами Нової Пошти)</span>
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="order__payments">
+                <div class="order__form-heading">Оберіть спосіб оплати:</div>
+
+                <div class="order__radio-list">
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="payments" checked>
+                      <span class="order__text">Оплата карткою</span>
+                    </label>
+                  </fieldset>
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="payments">
+                      <span class="order__text">Розрахунок при отриманні</span>
+                    </label>
+                  </fieldset>
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="payments">
+                      <span class="order__text">Apple pay </span>
+                    </label>
+                  </fieldset>
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="payments">
+                      <span class="order__text">Google pay </span>
+                    </label>
+                  </fieldset>
+                  <fieldset class="order__fieldset">
+                    <label class="order__label">
+                      <input class="order__radio" type="radio" name="payments">
+                      <span class="order__text">Платіж на рахунок від організації </span>
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+
+            <div class="order__mid">
+              <div class="order__form-heading">Введіть ваші данні:</div>
+
+              <div class="order__details">
+                <div class="order__details-head">
+                  <fieldset class="order__fieldset">
+                    <label class="form__label">
+                      <input class="form__input" type="text" name="name" placeholder="Ім’я">
+                    </label>
+                  </fieldset>
+
+                  <fieldset class="order__fieldset">
+                    <label class="form__label">
+                      <input class="form__input" type="text" name="surname" placeholder="Прізвище">
+                    </label>
+                  </fieldset>
+
+                  <fieldset class="order__fieldset">
+                    <label class="form__label">
+                      <input class="form__input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                  </fieldset>
+                </div>
+
+                <div class="order__details-mid">
+                  <fieldset class="order__fieldset">
+                    <label class="form__label">
+                      <input class="form__input" type="tel" name="tel" placeholder="+380 ">
+                    </label>
+                  </fieldset>
+
+                  <fieldset class="order__fieldset">
+                    <label class="form__label">
+                      <input class="form__checkbox" type="checkbox" name="dontcall" checked>
+                      <span class="form__password-hide">Не телефонувати для підтвердження замовлення</span>
+                    </label>
+                  </fieldset>
+                </div>
+
+                <div class="order__details-bot">
+                  <select class="order__choices">
+                    <option value="">Місто</option>
+                    <option value="Київ">Київ</option>
+                    <option value="Харьків">Харьків</option>
+                    <option value="Хмельницький">Хмельницький</option>
+                    <option value="Хмельницький">Хмельницький</option>
+                    <option value="Хмельницький">Хмельницький</option>
+                    <option value="Хмельницький">Хмельницький</option>
+                    <option value="Хмельницький">Хмельницький</option>
+                  </select>
+
+                  <select class="order__choices">
+                    <option value="">Відділення</option>
+                    <option value="Номер 1">Номер 1</option>
+                    <option value="Номер 2">Номер 2</option>
+                    <option value="Номер 3">Номер 3</option>
+                  </select>
+                </div>
+
+                <div class="order__details-receiver">
+                  <fieldset class="order__fieldset">
+                    <label class="form__label">
+                      <input class="form__checkbox" type="checkbox" name="receiver" checked>
+                      <span class="form__password-hide">Інший отримувач</span>
+                    </label>
+                  </fieldset>
+
+                  <div class="order__receiver-mid">
+                    <fieldset class="order__fieldset">
+                      <label class="form__label">
+                        <input class="form__input" type="text" name="name" placeholder="Ім’я">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="order__fieldset">
+                      <label class="form__label">
+                        <input class="form__input" type="text" name="surname" placeholder="Прізвище">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="order__fieldset">
+                      <label class="form__label">
+                        <input class="form__input" type="tel" name="tel" placeholder="+380 ">
+                      </label>
+                    </fieldset>
+                  </div>
+
+                  <fieldset class="order__fieldset order__fieldset--textarea">
+                    <label class="form__label">
+                      <textarea class="form__textarea" name="comments" placeholder="Коментар"></textarea>
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+
+            <div class="order__method">
+              <div class="order__form-heading">Якщо у вашому замовленні є товари на передзамовленні та наявні книги, будь ласка, оберіть порядок відправки:</div>
+
+              <div class="order__radio-list">
+                <fieldset class="order__fieldset">
+                  <label class="order__label">
+                    <input class="order__radio" type="radio" name="method" checked>
+                    <span class="order__text">Дочекатися передзамовлення та відправити все разом</span>
+                  </label>
+                </fieldset>
+                <fieldset class="order__fieldset">
+                  <label class="order__label">
+                    <input class="order__radio" type="radio" name="method">
+                    <span class="order__text">Відправити спочатку книги, які є у наявності</span>
+                  </label>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="order__btns">
+              <a class="order__back btn btn--back" href="/basket.html">Повернутися до кошика</a>
+              <a class="order__confirm btn btn--confirm" href="/success.html">Оформити замовлення</a>
+            </div>
+
+            <p class="order__note">*Відправлення здійснюється протягом 2-5 робочих днів (сб-нд вихідні) з моменту оформлення замовлення на сайті</p>
+          </form>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})
