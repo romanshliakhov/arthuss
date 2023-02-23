@@ -7,7 +7,188 @@
     @include('partials/header.html',{})
 
     <main class="main">
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__wrapp">
+            <a class="breadcrumbs__prev" href="/">Головна</a>
+            <span class="breadcrumbs__current">Кошик</span>
+          </div>
+        </div>
+      </section>
 
+      <section class="basket">
+        <div class="container">
+          <div class="basket__inner">
+            <form class="basket__form">
+              <div class="basket__info-head">
+                <h1 class="basket__title">Кошик</h1>
+
+                <div class="basket__products-count"><span>2</span> позиції</div>
+              </div>
+
+              <ul class="basket__products">
+                <li class="basket__product-item">
+                  <div class="basket__product-image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card4.webp'>
+                      <img width='102' height='127' src='img/card/card4.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <div class="basket__product-details">
+                    <div class="basket__product-info">
+                      <div class="basket__product-title">Мистецтво кольору: Суб’єктивний досвід і об’єктивне пізнання як шлях до мистецтва</div>
+                      <div class="basket__product-code">Артикул: <span>000217</span></div>
+
+                      <div class="basket__product-counts">
+                        1
+                      </div>
+                    </div>
+
+                    <div class="basket__product-price"><span>340</span> грн</div>
+                  </div>
+
+                  <div class="basket__product-delete">
+                    <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#delete'></use>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="basket__product-item">
+                  <div class="basket__product-image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card10.webp'>
+                      <img width='102' height='127' src='img/card/card10.png' alt=''>
+                    </picture>
+                  </div>
+
+                  <div class="basket__product-details">
+                    <div class="basket__product-info">
+                      <div class="basket__product-title">Жінки у дизайні</div>
+                      <div class="basket__product-code">Артикул: <span>030258</span></div>
+
+                      <div class="basket__product-counts">
+                        2
+                      </div>
+                    </div>
+
+                    <div class="basket__product-price"><span>820</span> грн</div>
+                  </div>
+
+                  <div class="basket__product-delete">
+                    <svg width='16' height='16'>
+                    <use href='img/sprite/sprite.svg#delete'></use>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="basket__form-summary">
+                <div class="basket__summary">
+                  <div class="basket__heading">Всього до сплати:</div>
+
+                  <div class="basket__summary-price"><span>1160</span> грн</div>
+                </div>
+
+                <div class="basket__summary">
+                  <div class="basket__sale-text">Застосувати промокод чи сертифікат:</div>
+
+                  <fieldset class="form__fieldset">
+                    <label class="basket__discount form__label">
+                      <input class="form__input" type="text" name="bonus-code" placeholder="Введіть код">
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+
+
+              <div class="order__btns">
+                <a class="order__back btn btn--back" href="/shop.html">Повернутися до каталогу </a>
+                <a class="order__confirm btn btn--confirm" href="/order.html">Оформити замовлення</a>
+              </div>
+            </form>
+
+            <aside class="basket__aside">
+              <div class="basket__heading">Вас також може зацікавити:</div>
+
+              <ul class="basket__aside-items">
+                <li class="basket__items">
+                  <div class="basket__item">
+                    <div class="basket__item-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card12.webp'>
+                        <img width='80' height='100' src='img/card/card12.png' alt=''>
+                      </picture>
+                    </div>
+
+                    <div class="basket__item-info">
+                      <div class="basket__item-title">Візуальна культура</div>
+                      <div class="basket__item-code">Артикул: <span>Артикул: 001359</span></div>
+                      <div class="basket__item-price">330 грн</div>
+                      <button class="basket__item-add btn">Додати до кошика</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="basket__items">
+                  <div class="basket__item">
+                    <div class="basket__item-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card12.webp'>
+                        <img width='80' height='100' src='img/card/card12.png' alt=''>
+                      </picture>
+                    </div>
+
+                    <div class="basket__item-info">
+                      <div class="basket__item-title">Візуальна культура</div>
+                      <div class="basket__item-code">Артикул: <span>Артикул: 001359</span></div>
+                      <div class="basket__item-price">330 грн</div>
+                      <button class="basket__item-add btn">Додати до кошика</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="basket__items">
+                  <div class="basket__item">
+                    <div class="basket__item-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card12.webp'>
+                        <img width='80' height='100' src='img/card/card12.png' alt=''>
+                      </picture>
+                    </div>
+
+                    <div class="basket__item-info">
+                      <div class="basket__item-title">Візуальна культура</div>
+                      <div class="basket__item-code">Артикул: <span>Артикул: 001359</span></div>
+                      <div class="basket__item-price">330 грн</div>
+                      <button class="basket__item-add btn">Додати до кошика</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="basket__items">
+                  <div class="basket__item">
+                    <div class="basket__item-image">
+                      <picture>
+                        <source type='image/webp' srcset='img/card/card12.webp'>
+                        <img width='80' height='100' src='img/card/card12.png' alt=''>
+                      </picture>
+                    </div>
+
+                    <div class="basket__item-info">
+                      <div class="basket__item-title">Візуальна культура</div>
+                      <div class="basket__item-code">Артикул: <span>Артикул: 001359</span></div>
+                      <div class="basket__item-price">330 грн</div>
+                      <button class="basket__item-add btn">Додати до кошика</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
     </main>
 
     @include('partials/footer.html',{})

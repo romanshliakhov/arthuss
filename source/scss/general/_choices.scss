@@ -207,6 +207,10 @@ $choices-z-index: 1 !default;
   line-height: 24px;
   color: var(--color-dark-gray);
 
+  &.choices__placeholder {
+    display: none;
+  }
+
   [dir="rtl"] & {
     padding-right: 4px;
     padding-left: 16px;
@@ -272,6 +276,10 @@ $choices-z-index: 1 !default;
 
   &.is-active {
     visibility: visible;
+  }
+
+  .choices__placeholder {
+    display: none;
   }
 
   .is-open & {
