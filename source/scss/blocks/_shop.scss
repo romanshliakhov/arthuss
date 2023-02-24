@@ -223,4 +223,52 @@
   &__filter-item {
     cursor: pointer;
   }
+
+  &__alert {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 30px;
+    transition: all 0.4s ease;
+
+    &.active {
+      opacity: 0;
+      visibility: hidden;
+      margin-bottom: 0;
+    }
+  }
+
+  &__alert-text {
+    position: relative;
+    padding-left: 40px;
+    font-weight: 700;
+
+    a {
+      text-decoration: underline;
+    }
+
+    span {
+      font-weight: 400;
+      text-decoration: underline;
+      color: var(--color-dark-charcoal);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-image: var(--add-basket-icon);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__alert-close {
+    cursor: pointer;
+  }
 }

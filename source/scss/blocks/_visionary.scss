@@ -13,11 +13,22 @@
     }
   }
 
+  &__info-title {
+    font-family: var(--font-family-mariupol);
+    font-size: clamp(36px, 5.847vw, 58px);
+    line-height: clamp(36px, 6.667vw, 96px);
+    font-weight: 700;
+    color: var(--color-dark-gray);
+
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__banner {
     margin-left: -104px;
     max-height: 792px;
     height: 100%;
-    // height: clamp(356px, 55vw, 792px);
 
     picture,
     img {

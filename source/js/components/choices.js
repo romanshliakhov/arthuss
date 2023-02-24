@@ -1,7 +1,5 @@
 import Choices from '../vendor/choice.js';
 
-console.log('test');
-
 const multiSelect = () => {
   const elements = document.querySelectorAll('.order__choices');
 

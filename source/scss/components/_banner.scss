@@ -7,11 +7,20 @@
     left: 52px;
     color: var(--color-light-grey);
     z-index: 1;
+
+    @media (max-width: 576px) {
+      width: 100%;
+      padding: 0 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
   }
 
   &__image {
     position: relative;
-    max-height: clamp(360px, 49.306vw, 710px);
+    height: clamp(360px, 49.306vw, 710px);
 
     picture,
     img {

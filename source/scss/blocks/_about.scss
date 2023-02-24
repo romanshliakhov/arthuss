@@ -1,13 +1,25 @@
 .about {
   padding-bottom: 60px;
 
+  .container {
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+  }
+
   &__top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px clamp(30px, 8.333vw, 120px);
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__banner {
+    height: clamp(360px, 49.306vw, 710px);
+
     picture,
     img {
       width: 100%;
@@ -28,6 +40,13 @@
     display: flex;
     flex-direction: column;
     grid-gap: clamp(20px, 2.222vw, 32px);
+    padding-top: 70px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+      order: 1;
+      padding: 0 clamp(20px, 5.04vw, 50px);
+    }
   }
 
   &__details {
@@ -39,6 +58,11 @@
     grid-gap: 30px;
     border-top: 1px solid #E2DCD1;
     border-bottom: 1px solid #E2DCD1;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+      padding: 30px clamp(20px, 5.04vw, 50px);
+    }
   }
 
   &__content {

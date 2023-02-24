@@ -66,9 +66,18 @@
     align-items: center;
     justify-content: center;
     grid-gap: 30px;
+
+    @media (max-width: 576px) {
+      display: grid;
+      grid-template-columns: 100%;
+    }
   }
 
   &__btn {
     max-width: 152px;
+
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
   }
 }

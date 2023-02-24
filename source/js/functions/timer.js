@@ -61,7 +61,7 @@ function timer(id, deadline) {
 
 // Задаємо дату до кінця акції
 if ( document.querySelector('.counter')) {
-  timer('.counter', '2023-02-13');
+  timer('.counter', '2023-02-28');
 }
 
 

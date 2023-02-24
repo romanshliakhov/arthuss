@@ -5,7 +5,7 @@ body {
   width: 100%;
   position: relative;
   font-family: var(--font-family-inter);
-  font-size: 16px;
+  font-size: clamp(14px, 1.111vw, 16px);
   line-height: 21px;
   color:  var(--color-dark-gray);
   background-color: var(--color-light-grey);

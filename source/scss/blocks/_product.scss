@@ -1,10 +1,15 @@
 .product {
-  margin-bottom: 120px;
+  margin-bottom: clamp(100px, 8.333vw, 120px);
 
   &__wrapp {
     display: grid;
     grid-template-columns: auto 400px;
-    grid-gap: 120px;
+    grid-gap: clamp(60px, 8.333vw, 120px);
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+      grid-gap: clamp(20px, 3.024vw, 30px);
+    }
   }
 
   &__images {

@@ -1,8 +1,16 @@
 .delivery {
   &__wrapp {
     display: grid;
-    grid-template-columns: 1fr 300px;
-    grid-gap: 120px;
+    grid-template-columns: 1fr clamp(250px, 20.833vw, 300px);
+    grid-gap: 50px clamp(30px, 8.333vw, 120px);
+
+    @media (max-width: 1240px) {
+      grid-gap: 30px;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__tabs {
@@ -13,6 +21,30 @@
   &__tabs-controls {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1240px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 769px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr) auto;
+    }
+
+    @media (max-width: 576px) {
+      width: 100vw;
+      padding-right: 40px;
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+    }
   }
 
   &__controls-btns {
@@ -30,12 +62,25 @@
         color: var(--color-dark-gray);
       }
     }
+
+    @media (max-width: 1240px) {
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      &:nth-child(2) {
+        padding: 0 30px 10px;
+      }
+    }
   }
 
   &__controls-btn {
     pointer-events: none;
     color:  var(--color-heavy-rain);
     transition: all 0.4s ease;
+    white-space: nowrap;
   }
 
   &__information-item {
@@ -75,8 +120,8 @@
 
   &__information-heading {
     font-family: var(--font-family-mariupol);
-    font-size: 24px;
-    line-height: 30px;
+    font-size: clamp(18px, 1.667vw, 24px);
+    line-height: clamp(24px, 2.083vw, 30px);
     font-weight: 700;
     color: var(--color-dark-gray);
   }

@@ -1,4 +1,9 @@
 .branding {
+  .container {
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+  }
 
   &__inner {
     display: flex;
@@ -10,6 +15,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px clamp(30px, 8.333vw, 120px);
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__heading {
@@ -19,9 +28,17 @@
     flex-direction: column;
     justify-content: center;
     grid-gap: clamp(20px, 2.222vw, 32px);
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+      order: 1;
+      padding: 0 clamp(20px, 5.04vw, 50px);
+    }
   }
 
   &__banner {
+    height: clamp(360px, 49.306vw, 710px);
+
     picture,
     img {
       width: 100%;
@@ -39,6 +56,11 @@
     grid-gap: 30px;
     border-top: 1px solid #E2DCD1;
     border-bottom: 1px solid #E2DCD1;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+      padding: 30px clamp(20px, 5.04vw, 50px);
+    }
   }
 
   &__content {
@@ -98,5 +120,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__controls {
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 }

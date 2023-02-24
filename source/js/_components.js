@@ -7,7 +7,9 @@ import './components/replaceEl.js';
 import './components/phoneMask.js';
 import './components/tabs.js';
 import './components/side-panel.js';
+import './components/closeAlert.js';
 import './components/choices.js';
+import './components/showPassword.js';
 
 
 

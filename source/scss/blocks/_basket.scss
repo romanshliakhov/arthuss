@@ -4,7 +4,11 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr 300px;
-    grid-gap: 120px;
+    grid-gap: 50px clamp(30px, 8.333vw, 120px);
+
+    @media (max-width: 992px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__aside {
@@ -23,6 +27,15 @@
     display: flex;
     flex-direction: column;
     grid-gap: 18px;
+
+    @media (max-width: 992px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__item {
@@ -71,6 +84,10 @@
     display: flex;
     align-items: center;
     grid-gap: 50px;
+
+    @media (max-width: 576px) {
+      justify-content: space-between;
+    }
   }
 
   &__products-count {
@@ -128,6 +145,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    grid-gap: 10px;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__products {
@@ -140,9 +162,13 @@
 
   &__product-item {
     position: relative;
-    display: flex;
-    align-items: center;
-    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: 102px 1fr;
+    grid-gap: clamp(24px, 3.024vw, 30px);
+
+    @media (max-width: 576px) {
+      grid-template-columns: 80px 1fr;
+    }
   }
 
   &__product-delete {
@@ -153,11 +179,13 @@
   }
 
   &__product-details {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 100px;
     grid-gap: 5px;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr 60px;
+    }
   }
 
   &__product-info {
@@ -165,21 +193,29 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     grid-gap: 10px;
   }
 
   &__product-price {
-    font-size: 18px;
-    line-height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: clamp(14px, 1.815vw, 18px);
+    line-height: clamp(20px, 2.621vw, 26px);
     font-weight: 600;
   }
 
   &__product-title {
     font-family: var(--font-family-mariupol);
-    font-size: 16px;
-    line-height: 24px;
+    font-size: clamp(14px, 1.613vw, 16px);
+    line-height: clamp(20px, 2.419vw, 24px);
     font-weight: 700;
     color: var(--color-dark-charcoal);
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   &__product-code {
