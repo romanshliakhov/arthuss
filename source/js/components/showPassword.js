@@ -1,11 +1,23 @@
 const passwordParent = document.querySelectorAll('[data-password-parent]');
-const passwordField = document.querySelectorAll('[data-password-field]');
-const passwordToggle = document.querySelectorAll('[data-password-toggle]');
 
-console.log(passwordParent)
+function showPassword (parent) {
+  parent.forEach(function (item) {
+    const passwordInput = item.querySelector('input[name="password"]');
+    const passwordBtn = item.querySelector('input[type="checkbox"]');
 
-const showPassword = function() {
-
+    passwordBtn.addEventListener('click', function(e){
+      this.checked ?
+      passwordInput.setAttribute('type', 'text') :
+      passwordInput.setAttribute('type', 'password');
+    })
+  })
 }
 
-showPassword();
+if(passwordParent) {
+  showPassword(passwordParent);
+};
+
+
+
+
+

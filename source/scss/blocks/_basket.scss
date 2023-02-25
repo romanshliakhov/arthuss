@@ -227,13 +227,34 @@
   &__product-counts {
     width: 100px;
     height: 26px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     border-radius: 40px;
     border: 1px solid var(--color-dark-gray);
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
+  }
+
+  &__counts-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__product-count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__product-input {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    background-color: transparent;
   }
 }

@@ -39,17 +39,6 @@ for (const container of  document.querySelectorAll('.container') ) {
       prevEl: container.querySelector(".block__slider-prev"),
       clickable: true,
   },
-    // breakpoints: {
-    //   320: {
-    //       slidesPerView: 'auto',
-    //       freeMode: true,
-    //       spaceBetween: 10,
-    //     },
-    //   1440: {
-    //     slidesPerView: 5,
-    //     spaceBetween: 18,
-    //   }
-    // }
   });
 }
 
@@ -90,6 +79,76 @@ let sliderFeedbacks = new Swiper(".branding__feedbacks-slider", {
 });
 
 
+// Modal slider
+let sliderModalProduct = new Swiper(".modal__product-slider", {
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  spaceBetween: 13,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  grid: {
+    rows: 1,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    576: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+  }
+});
+
+
+// Product-page Slider
+for (const sliderProduct of document.querySelectorAll('.product__images-slider')) {
+  if (sliderProduct) {
+    (function () {
+      "use strict";
+
+      const breakpoint = window.matchMedia("(min-width:993px)");
+      let slider;
+
+      const enableSwiper = function () {
+        slider = new Swiper(sliderProduct, {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 10,
+          observer: true,
+          observeParents: true,
+          adaptiveHeight: true,
+          breakpoints: {
+            320: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+            576: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+          }
+        });
+      };
+
+      const breakpointChecker = function () {
+        if (breakpoint.matches === true) {
+          if (slider !== undefined) slider.destroy(true, true);
+
+          return;
+        } else if (breakpoint.matches === false) {
+          return enableSwiper();
+        }
+      };
+
+      breakpoint.addListener(breakpointChecker);
+      breakpointChecker();
+    })();
+  }
+
+}
 
 
 
