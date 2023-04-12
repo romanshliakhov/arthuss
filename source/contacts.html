@@ -7,15 +7,52 @@
     @include('partials/header.html',{})
 
     <main class="main">
-      <section class="breadcrumbs">
+      <section class="contacts-page">
         <div class="container">
-          <div class="breadcrumbs__wrapp">
-            <a class="breadcrumbs__prev" href="/">Головна</a>
-            <span class="breadcrumbs__current">Контакти</span>
+          <div class="contacts-page__inner">
+            <div class="breadcrumbs">
+              <div class="breadcrumbs__wrapp">
+                <a class="breadcrumbs__prev" href="/">Головна</a>
+                <span class="breadcrumbs__current">Контакти</span>
+              </div>
+            </div>
+
+            <div class="contacts-page__content">
+              <div class="contacts-page__info">
+                <h1 class="contacts-page__title title">Зв’яжіться з нами</h1>
+
+                <ul class="contacts-page__details">
+                  <li class="contacts-page__detail">
+                    <div class="contacts-page__detail-head">Графік роботи відділу продажів:</div>
+                    <div class="contacts-page__detail-info">Пн - Пт, 9-00 - 18-00</div>
+                  </li>
+                  <li class="contacts-page__detail">
+                    <div class="contacts-page__detail-head">Адреса:</div>
+                    <div class="contacts-page__detail-info">м. Київ, 04074, вул. Шахтарська, 5</div>
+                  </li>
+                  <li class="contacts-page__detail">
+                    <div class="contacts-page__detail-head">Телефон:</div>
+                    <a href="tel:+380442276963" class="contacts-page__detail-info">+38(044) 227-69-63</a>
+                  </li>
+                  <li class="contacts-page__detail">
+                    <div class="contacts-page__detail-head">Email:</div>
+                    <a href="mailto:arthussbooks@gmail.com" class="contacts-page__detail-info">arthussbooks@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="contacts-page__right">
+              <div class="contacts-page__banner branding__banner">
+                <picture>
+                  <source type='image/webp' srcset='img/banners/contacts.webp'>
+                  <img width='608' height='500' src='img/banners/contacts.png' alt='Контакти'>
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-
     </main>
 
     @include('partials/footer.html',{})
