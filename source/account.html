@@ -16,6 +16,41 @@
         </div>
       </section>
 
+      <section class="account">
+        <div class="container">
+          <div class="account__wrapp tabs">
+            <div class="account__info">
+              <div class="account__info-head">
+                <div class="account__name">Анатолій Петренко</div>
+                <div class="account__email">example@gmail.com</div>
+              </div>
+
+              <ul class="account__controls">
+                <li class="account__controls-item tablinks active" tabs-btn="settings">
+                  <button class="tabs__btn">Налаштувaання профілю</button>
+                </li>
+                <li class="account__controls-item tablinks" tabs-btn="orders">
+                  <button class="tabs__btn">Історія замовлень</button>
+                </li>
+                <li class="account__controls-item">
+                  <button>Вийти</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="account__content">
+              <li class="account__tabcontent tabcontent active" tabs-content="settings">
+                121
+              </li>
+
+              <li class="account__tabcontent tabcontent" tabs-content="orders">
+                345535
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     @include('partials/footer.html',{})

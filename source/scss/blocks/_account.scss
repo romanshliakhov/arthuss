@@ -1,0 +1,36 @@
+.account {
+  &__wrapp {
+    --gap: clamp(50px, 9.677vw, 120px);
+    display: grid;
+    grid-template-columns: 280px calc(100% - var(--gap) - 280px);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-gap: var(--gap) 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--color-dark-gray);
+  }
+
+  &__email {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-heavy-rain);
+  }
+
+  &__controls-item {
+    button {
+      pointer-events: none;
+    }
+  }
+}
