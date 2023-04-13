@@ -75,4 +75,12 @@
       max-width: 100%;
     }
   }
+
+  &--save {
+    max-width: 170px;
+
+    // @media (max-width: 576px) {
+    //   max-width: 100%;
+    // }
+  }
 }
