@@ -48,6 +48,14 @@
   }
 
   &__search {
+    max-width: 400px;
+    width: 100%;
+
+    @media (max-width: 1240px) {
+      max-width: initial;
+      width: auto;
+    }
+
     @media (max-width: 1240px) {
       flex-grow: 1;
     }

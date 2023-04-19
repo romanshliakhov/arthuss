@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ua">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header-search.html',{})
+
+    <main class="main">
+      <div class="search-page">
+        <div class="container">
+          <div class="search-page__wrapp">
+            <form class="search">
+              <label class="search__label">
+                <button class="search__btn">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                </button>
+                <input class="search__input" type="text" placeholder="Мистецтво Кольору, Йоганнес Іттен">
+
+              </label>
+            </form>
+
+            <div class="search-page__result">
+              <span class="search-page__title">Вибачте, але нічого не відповідає умовам вашого пошуку</span>
+
+              <div class="search-page__details">
+                <a href="#">Чому варто прочитати книгу Діани Клочко «65 українських шедеврів. Визнані й неявні»</a>
+                <a href="#">Розкрадене мистецтво: 6 українських художників, котрих росія видає за своїх</a>
+                <a href="#">Книги для веб-дизайнерів і розробників сайтів</a>
+              </div>
+            </div>
+
+            <div class="search-page__result">
+              <span class="search-page__title">Книги:</span>
+
+              <div class="search-page__items">
+                <div class="card">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card5.webp'>
+                      <img width='400' height='500' src='img/card/card5.png' alt='Як стати успішним ілюстратором'>
+                    </picture>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__title" href="/product-page.html">Як стати успішним ілюстратором</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">470 грн</div>
+                      <div class="card__price-regular">580 грн</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card3.webp'>
+                      <img width='400' height='500' src='img/card/card3.png' alt='Графічні стилі: від вікторіанців до хіпстерів'>
+                    </picture>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__title" href="/product-page.html">Графічні стилі: від вікторіанців до хіпстерів</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">570 грн</div>
+                      <div class="card__price-regular">670 грн</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card1.webp'>
+                      <img width='400' height='500' src='img/card/card1.png' alt='Дизайн добробуту: Посібник з оптимізації оселі для здоров’я, комфорту та щастя'>
+                    </picture>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__title" href="/product-page.html">Дизайн добробуту: Посібник з оптимізації оселі для здоров’я, комфорту та щастя</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">470 грн</div>
+                      <div class="card__price-regular">670 грн</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card8.webp'>
+                      <img width='400' height='500' src='img/card/card8.png' alt='Дикі інтер’єри. Красиві рослини в чудових просторах'>
+                    </picture>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__title" href="/product-page.html">Дикі інтер’єри. Красиві рослини в чудових просторах</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">420 грн</div>
+                      <div class="card__price-regular">490 грн</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card9.webp'>
+                      <img width='400' height='500' src='img/card/card9.png' alt='Життя в кольорі'>
+                    </picture>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__title" href="/product-page.html">Життя в кольорі</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">630 грн</div>
+                      <div class="card__price-regular">740 грн</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card__image">
+                    <picture>
+                      <source type='image/webp' srcset='img/card/card5.webp'>
+                      <img width='400' height='500' src='img/card/card5.png' alt='Як стати успішним ілюстратором'>
+                    </picture>
+                  </div>
+
+                  <div class="card__info">
+                    <div class="card__info-head">
+                      <a class="card__title" href="/product-page.html">Як стати успішним ілюстратором</a>
+                    </div>
+
+                    <div class="card__price">
+                      <div class="card__price-current">470 грн</div>
+                      <div class="card__price-regular">580 грн</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

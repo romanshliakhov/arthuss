@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ua">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header-search.html',{})
+
+    <main class="main">
+      <div class="search-page">
+        <div class="container">
+          <div class="search-page__wrapp">
+            <form class="search">
+              <label class="search__label">
+                <button class="search__btn">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                </button>
+                <input class="search__input" type="text" placeholder="Мистецтво Кольору, Йоганнес Іттен">
+
+              </label>
+            </form>
+
+            <div class="search-page__result">
+              <span class="search-page__title">Вибачте, але нічого не відповідає умовам вашого пошуку</span>
+
+              <div class="search-page__details">
+                <p>Будь ласка, спробуйте ще раз з іншими ключовими словами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

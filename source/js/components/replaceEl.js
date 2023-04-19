@@ -17,9 +17,9 @@ let elementName = {
   burgerDefault: '.header__inner',
   burgerMobile: '.mobile__menu-head',
 
-  basket: '.basket',
-  basketDefault: '.header__icons',
-  basketMobile: '.mobile__menu-head',
+  // basket: '.basket',
+  // basketDefault: '.header__icons',
+  // basketMobile: '.mobile__menu-head',
 
   lang: '.lang',
   langParent: '.header__logo',
@@ -76,7 +76,7 @@ window.addEventListener('resize', () => {
 
         replaceElements(items, elementName.burger, elementName.burgerMobile, elementName.burgerDefault, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
 
-        replaceElements(items, elementName.basket, elementName.basketMobile, elementName.basketDefault, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
+        // replaceElements(items, elementName.basket, elementName.basketMobile, elementName.basketDefault, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
       }
     })
   }
@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         replaceElements(items, elementName.burger, elementName.burgerMobile, elementName.burgerDefault, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
 
-        replaceElements(items, elementName.basket, elementName.basketMobile, elementName.basketDefault, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
+        // replaceElements(items, elementName.basket, elementName.basketMobile, elementName.basketDefault, replaceSettings.beforeend, replaceSettings.beforeend, replaceSettings.smallTablet);
       }
     })
   }

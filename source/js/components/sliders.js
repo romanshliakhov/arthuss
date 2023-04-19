@@ -156,6 +156,7 @@ for (const sliderProduct of document.querySelectorAll('.account__order-slider'))
     (function () {
       "use strict";
 
+      const btnsParrent = sliderProduct.previousElementSibling;
       const breakpoint = window.matchMedia("(max-width:576px)");
       let slider;
 
@@ -166,10 +167,11 @@ for (const sliderProduct of document.querySelectorAll('.account__order-slider'))
           observer: true,
           observeParents: true,
           adaptiveHeight: true,
-          loop: true,
+          // watchOverflow: true,
+
           navigation: {
-            nextEl: ".account__slider-next",
-            prevEl: ".account__slider-prev",
+            nextEl: btnsParrent?.querySelector(".account__slider-next"),
+            prevEl: btnsParrent?.querySelector(".account__slider-prev"),
             clickable: true,
         },
         });
