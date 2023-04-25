@@ -151,48 +151,46 @@ for (const sliderProduct of document.querySelectorAll('.product__images-slider')
 }
 
 // Order history Slider
-for (const sliderProduct of document.querySelectorAll('.account__order-slider')) {
-  if (sliderProduct) {
-    (function () {
-      "use strict";
+// for (const sliderProduct of document.querySelectorAll('.account__order-slider')) {
+//   if (sliderProduct) {
+//     (function () {
+//       "use strict";
 
-      const btnsParrent = sliderProduct.previousElementSibling;
-      const breakpoint = window.matchMedia("(max-width:576px)");
-      let slider;
+//       const btnsParrent = sliderProduct.previousElementSibling;
+//       const breakpoint = window.matchMedia("(max-width:576px)");
+//       let slider;
 
-      const enableSwiper = function () {
-        slider = new Swiper(sliderProduct, {
-          slidesPerView: 'auto',
-          spaceBetween: 15,
-          observer: true,
-          observeParents: true,
-          adaptiveHeight: true,
-          // watchOverflow: true,
+//       const enableSwiper = function () {
+//         slider = new Swiper(sliderProduct, {
+//           slidesPerView: 'auto',
+//           spaceBetween: 15,
+//           observer: true,
+//           observeParents: true,
+//           adaptiveHeight: true,
+//           navigation: {
+//             nextEl: btnsParrent?.querySelector(".account__slider-next"),
+//             prevEl: btnsParrent?.querySelector(".account__slider-prev"),
+//             clickable: true,
+//         },
+//         });
+//       };
 
-          navigation: {
-            nextEl: btnsParrent?.querySelector(".account__slider-next"),
-            prevEl: btnsParrent?.querySelector(".account__slider-prev"),
-            clickable: true,
-        },
-        });
-      };
+//       const breakpointChecker = function () {
+//         if (breakpoint.matches === true) {
+//           if (slider !== undefined) slider.destroy(true, true);
 
-      const breakpointChecker = function () {
-        if (breakpoint.matches === true) {
-          if (slider !== undefined) slider.destroy(true, true);
+//           return;
+//         } else if (breakpoint.matches === false) {
+//           return enableSwiper();
+//         }
+//       };
 
-          return;
-        } else if (breakpoint.matches === false) {
-          return enableSwiper();
-        }
-      };
+//       breakpoint.addListener(breakpointChecker);
+//       breakpointChecker();
+//     })();
+//   }
 
-      breakpoint.addListener(breakpointChecker);
-      breakpointChecker();
-    })();
-  }
-
-}
+// }
 
 
 
