@@ -188,18 +188,23 @@
 
 
   &__content-orders {
+    width: calc(100% + 55px);
+    margin-right: -55px;
+    padding-right: 55px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     grid-gap: 30px;
+    overflow-x: auto;
   }
 
   &__order {
-    width: 100%;
+    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     grid-gap: 20px;
+    flex-wrap: nowrap;
 
     table {
       border: 3px solid var(--color-gray);
@@ -213,6 +218,7 @@
       padding: 0 5px;
       border: 3px solid var(--color-gray);
       text-align: right;
+      white-space: nowrap;
     }
   }
 
